@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="image/icon-.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <title>Wiki-Guia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!---Icono-->
+            <a class="navbar-brand" href="Index.html">
+                <i class="bi bi-robot"></i>
+                <span class="text-warning">Wiki-Guia</span>
+            </a>
+            <!---Boton del menu-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Elementos del menu colapsable-->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="juegos.html">Juegos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" href="#">Compra Aqui</a>
+                        <ul class="dropdown-menu bg-secondary">
+                            <li>
+                                <a class="dropdown-item" href="">Carrito</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">Compras</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" disable>Proximamente...</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr class="text-white-50">
+                <!--Enlaces RRHH
+                <ul class="navbar-nav flex-row flex-wrap text-light">
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <i class="bi bi-twitter"></i>
+                        <small class="d-md-none ms-2">Twitter</small>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <i class="bi bi-github"></i>
+                        <small class="d-md-none ms-2">GitHub</small>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <i class="bi bi-instagram"></i>
+                        <small class="d-md-none ms-2">Instagram</small>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <i class="bi bi-whatsapp"></i>
+                        <small class="d-md-none ms-2">WhatsApp</small>
+                    </li>
+                </ul>-->
+                <!--Boton Informacion-->
+                <form class="d-flex"></form>
+                <button class="btn btn-outline-warning d-none d-md-inline-block" type="submit">Login</button>
+            </div>
+        </div>
+    </nav>
+</head>
+
+<body class="bg-secondary">
+
+    <style>
+        .container-wrapper {
+            display: flex;
+        }
+
+        .container1 {
+            width: 40%;
+            /* adjust the width as needed */
+        }
+
+        .container2 {
+            width: 60%;
+            /* adjust the width as needed */
+        }
+    </style>
+    <div class="container-wrapper">
+        <div class="container1">
+            <img class="img" src="image\Guia\GTAV.jpg" style="padding-left: 300px; padding-top: 180px;">
+        </div>
+        <div class="container2" style="padding-right: 300px;">
+            <!-- content for container 2 goes here -->
+            <div class="container">
+                <h1 class="card-text " style="padding-top: 100px;">Grand Theft Auto V</h1>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#tab1" data-bs-target="#tab1"
+                            style="color:black;">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab2" data-bs-target="#tab2"
+                            style="color:black;">Armas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab3" data-bs-target="#tab3"
+                            style="color:black;">Logros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab4" data-bs-target="#tab4"
+                            style="color:black;">Duración</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab5" data-bs-target="#tab5"
+                            style="color:black;">Ocultos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab6" data-bs-target="#tab6"
+                            style="color:black;">Enemigos</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane fade show active">
+                        <br>
+                        <h3>Historia</h3>
+                        <p>La historia comienza con un robo fallido a una joyería en Ludendorff, North Yankton, en
+                            2004, en el que Michael De Santa y Trevor Philips, dos antiguos socios criminales, son dados
+                            por muertos. Nueve años después, Michael, quien ahora vive en Los Santos bajo el programa de
+                            protección de testigos, es infeliz con su vida y su familia, y se acerca a Franklin Clinton,
+                            un joven delincuente que trabaja para un concesionario de coches. Juntos, comienzan a
+                            trabajar para un ladrón de poca monta llamado Lester Crest, y más tarde se unen a Trevor
+                            Philips, quien resulta estar vivo y operando en el área de Blaine County.
+                        </p>
+                            Los tres personajes se ven envueltos en varios atracos, robos, asesinatos y otros crímenes,
+                            mientras intentan evitar a la policía y a otras organizaciones criminales. La historia
+                            también incluye varios giros y sorpresas, como la traición de algunos personajes y la
+                            aparición de otros nuevos.
+                        </p>
+                            Grand Theft Auto V fue aclamado por la crítica por su mundo abierto, su jugabilidad, sus
+                            personajes y su historia. También estableció nuevos récords de ventas, convirtiéndose en uno
+                            de los videojuegos más vendidos de todos los tiempos. Además, el juego ha sido objeto de
+                            controversia por su violencia, su contenido sexual y su representación de temas
+                            controvertidos como el racismo y la corrupción política.
+
+
+
+                        </p>
+                    </div>
+                    <div id="tab2" class="tab-pane fade">
+                        <br>
+                        <h3>Armas</h3>
+                        <p>Pistolas: Pistola de 9mm, Pistola pesada, Pistola vintage, Pistola de calibre .50, Pistola
+                            perforante, Pistola de doble acción, Pistola de combate.
+                        </p>
+                            Escopetas: Escopeta de cañones recortados, Escopeta de combate, Escopeta pesada, Escopeta de
+                            asalto, Escopeta de francotirador.
+                        </p>
+                            Rifles de asalto: AK-47, Fusil de asalto Bullpup, Fusil de asalto avanzado, Carabina,
+                            Carabina especial.
+                        </p>
+                            Rifles de francotirador: Rifle de francotirador pesado, Rifle de francotirador avanzado,
+                            Rifle de francotirador, Fusil de francotirador.
+                        </p>
+                            Armas automáticas: Micro SMG, SMG, Ametralladora ligera, Mini ametralladora, Ametralladora
+                            pesada.
+                        </p>
+                            Armas cuerpo a cuerpo: Puños, Cuchillo, Bate de béisbol, Mazo, Machete, Hacha, Palanca,
+                            Martillo.
+                        </p>
+                            Granadas y explosivos: Granada, C4, Bomba adhesiva, Lanzacohetes, Lanzagranadas.
+                        </p>
+                            Cabe destacar que también hay disponible una gran cantidad de armas especiales y
+                            personalizables, así como una gran variedad de vehículos con armamento integrado.
+
+
+                        </p>
+                    </div>
+                    <div id="tab3" class="tab-pane fade">
+                        <br>
+                        <h3>Logros</h3>
+                        <p>Bienvenido a Los Santos - Completar la misión de apertura del juego.</p>
+                            Inversionista - Comprar todas las propiedades disponibles en el modo de un jugador.</p>
+                            Multimillonario - Acumular una fortuna de 10.000.000 de dólares en el modo de un
+                            jugador.</p>
+                            Los Santos Customs - Completar todas las modificaciones de los vehículos en el modo de
+                            un jugador.</p>
+                            Vuelo de fantasía - Realizar una maniobra acrobática con un avión.</p>
+                            Aprendiz de cazarecompensas - Capturar a un fugitivo en el modo de un jugador.</p>
+                            Duelo de titanes - Ganar un enfrentamiento con un jefe criminal en el modo de un
+                            jugador.</p>
+                            Guerra de territorios - Luchar y ganar el control de todas las zonas de guerra en el
+                            modo multijugador.</p>
+                            Rey del mundo libre - Alcanzar el nivel máximo en el modo multijugador.</p>
+                            Créditos finales - Completar todas las misiones principales en el modo de un jugador.
+
+
+                        </p>
+                    </div>
+                    <div id="tab4" class="tab-pane fade">
+                        <br>
+                        <h3>Duracion</h3>
+                        <p>La duración del juego Grand Theft Auto V puede variar dependiendo del enfoque del jugador y
+                            su estilo de juego. A continuación se presentan algunos datos que pueden ayudar a estimar la
+                            duración del juego:
+                        </p>
+                            La historia principal del modo de un jugador de Grand Theft Auto V consta de 69 misiones
+                            principales, que pueden durar alrededor de 25 a 30 horas en total si se juegan de forma
+                            consecutiva sin realizar actividades secundarias.
+                        </p>
+                            Sin embargo, el juego ofrece una gran cantidad de actividades secundarias, misiones de
+                            personajes secundarios, eventos aleatorios, desafíos, logros y coleccionables, lo que puede
+                            extender significativamente la duración del juego. Si el jugador decide completar todo el
+                            contenido disponible, la duración del juego puede oscilar entre 80 y 100 horas o más.
+                        </p>
+                            Además, Grand Theft Auto V cuenta con un modo multijugador en línea, llamado ""GTA Online"",
+                            que ofrece una amplia variedad de misiones, desafíos, eventos y actividades cooperativas y
+                            competitivas. La duración del juego en línea dependerá del enfoque del jugador y del nivel
+                            de interés en las actividades en línea.
+                        </p>
+                            En resumen, la duración del juego Grand Theft Auto V puede oscilar entre 25 y 100 horas o
+                            más, dependiendo de la cantidad de contenido que el jugador quiera explorar y el modo de
+                            juego elegido.
+
+                        </p>
+                    </div>
+                    <div id="tab5" class="tab-pane fade">
+                        <br>
+                        <h3>Ocultos</h3>
+                        <p>Hay varios lugares ocultos en Grand Theft Auto V que el jugador puede descubrir explorando
+                            el mapa del juego y realizando ciertas acciones específicas. A continuación se presentan
+                            algunos de los lugares ocultos más destacados:
+                        </p>
+                            El Monte Chiliad: una montaña ubicada en la región de Blaine County, al noreste de Los
+                            Santos. En la cima del monte se puede encontrar una serie de pistas y rompecabezas que
+                            forman parte de una búsqueda del tesoro.
+                        </p>
+                            Los laboratorios Humane: una instalación subterránea secreta que se encuentra debajo del
+                            área de Sandy Shores. El jugador puede acceder a ella durante una misión del modo historia o
+                            mediante un glitch.
+                        </p>
+                            El hotel de montaña: un hotel abandonado que se encuentra en el noroeste del mapa, en la
+                            región de Paleto Bay. El jugador puede encontrar varios secretos y pistas dentro del hotel.
+                        </p>
+                            El submarino hundido: un submarino hundido que se encuentra en el fondo del océano, cerca de
+                            la costa este del mapa. El jugador puede explorarlo y encontrar objetos valiosos.
+                        </p>
+                            El Fort Zancudo: una base militar altamente protegida que se encuentra en la región de
+                            Blaine County. El jugador puede ingresar a la base de varias maneras y encontrar armas y
+                            vehículos militares.
+                        </p>
+                            La cueva de los caníbales: una cueva ubicada en la región de Raton Canyon, al norte de Los
+                            Santos. El jugador puede encontrar varios elementos perturbadores dentro de la cueva.
+                        </p>
+                            Es importante destacar que algunos de estos lugares ocultos pueden requerir ciertos
+                            requisitos o desbloqueos antes de que el jugador pueda acceder a ellos.
+
+
+                        </p>
+                    </div>
+                    <div id="tab6" class="tab-pane fade">
+                        <br>
+                        <h3>Enemigos</h3>
+                        <p>En Grand Theft Auto V, el jugador se encontrará con varios tipos de enemigos, incluyendo:
+                        </p>
+                            Bandas callejeras: hay varias bandas callejeras en Los Santos y Blaine County, incluyendo
+                            Los Vagos, Los Santos Vagos, The Families, Ballas y Marabunta Grande. Estas bandas controlan
+                            ciertas áreas de la ciudad y pueden atacar al jugador si se adentra en su territorio.
+                        </p>
+                            Enemigos de la misión: durante la historia principal del juego, el jugador se enfrentará a
+                            varios enemigos específicos de las misiones, como enemigos de las misiones de asesinato o de
+                            robo de bancos.
+                        </p>
+                            Fuerzas del orden: la policía y el ejército son enemigos del jugador si este comete algún
+                            delito o viola la ley en su presencia. El nivel de búsqueda del jugador aumentará si los
+                            oficiales lo ven en acción.
+                        </p>
+                            Cazadores de recompensas: si el jugador comete un delito en el modo de un jugador, puede
+                            recibir una recompensa por su cabeza. Los cazadores de recompensas pueden rastrear y atacar
+                            al jugador para cobrar la recompensa.
+                        </p>
+                            Enemigos en línea: en el modo multijugador en línea, los jugadores pueden enfrentarse a
+                            enemigos controlados por otros jugadores en misiones, eventos o actividades.
+                        </p>
+                            Es importante mencionar que en Grand Theft Auto V el jugador tiene la opción de evitar la
+                            violencia y de no enfrentarse a ningún enemigo si así lo desea, pero la mayoría de las veces
+                            el juego involucra situaciones violentas y conflictos que el jugador debe resolver.
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Pie de pagina-->
+    <div class="container-fluid">
+        <div class="row p-5 bg-black text-white">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h3">Wiki-Guia</p>
+                <pc class="text-secondary">Santiago, Maipú</pc>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5 mb-3">Informacion</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Integrantes</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Curso</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Hambre</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5 mb-3">Contacto</p>
+                <div class="mb-2">
+                    <i class="bi bi-whatsapp"></i>
+                    <a class="text-secondary text-decoration-none" href="#">WhatsApp</a>
+                </div>
+                <div class="mb-2">
+                    <i class="bi bi-instagram"></i>
+                    <a class="text-secondary text-decoration-none" href="#">Instagram</a>
+                </div>
+                <div class="mb-2">
+                    <i class="bi bi-github"></i>
+                    <a class="text-secondary text-decoration-none" href="#">GitHub</a>
+                </div>
+                <div class="mb-2">
+                    <i class="bi bi-twitter"></i>
+                    <a class="text-secondary text-decoration-none" href="#">Twitter</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5 mb-3">Derechos</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Tems & Conditions</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

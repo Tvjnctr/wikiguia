@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="image/icon-.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <title>Wiki-Guia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!---Icono-->
+            <a class="navbar-brand" href="Index.html">
+                <i class="bi bi-robot"></i>
+                <span class="text-warning">Wiki-Guia</span>
+            </a>
+            <!---Boton del menu-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Elementos del menu colapsable-->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="juegos.html">Juegos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" href="#">Compra Aqui</a>
+                        <ul class="dropdown-menu bg-secondary">
+                            <li>
+                                <a class="dropdown-item" href="">Carrito</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">Compras</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" disable>Proximamente...</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr class="text-white-50">
+                <!--Enlaces RRHH
+                <ul class="navbar-nav flex-row flex-wrap text-light">
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <i class="bi bi-twitter"></i>
+                        <small class="d-md-none ms-2">Twitter</small>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <i class="bi bi-github"></i>
+                        <small class="d-md-none ms-2">GitHub</small>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <i class="bi bi-instagram"></i>
+                        <small class="d-md-none ms-2">Instagram</small>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <i class="bi bi-whatsapp"></i>
+                        <small class="d-md-none ms-2">WhatsApp</small>
+                    </li>
+                </ul>-->
+                <!--Boton Informacion-->
+                <form class="d-flex"></form>
+                <button class="btn btn-outline-warning d-none d-md-inline-block" type="submit">Login</button>
+            </div>
+        </div>
+    </nav>
+</head>
+
+<body class="bg-secondary">
+
+    <style>
+        .container-wrapper {
+            display: flex;
+        }
+
+        .container1 {
+            width: 40%;
+            /* adjust the width as needed */
+        }
+
+        .container2 {
+            width: 60%;
+            /* adjust the width as needed */
+        }
+    </style>
+    <div class="container-wrapper">
+        <div class="container1">
+            <img class="img" src="image\Guia\HollowKnight.jpg" style="padding-left: 300px; padding-top: 180px;">
+        </div>
+        <div class="container2" style="padding-right: 300px;">
+            <!-- content for container 2 goes here -->
+            <div class="container">
+                <h1 class="card-text " style="padding-top: 100px;">Hollow Knight</h1>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#tab1" data-bs-target="#tab1"
+                            style="color:black;">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab2" data-bs-target="#tab2"
+                            style="color:black;">Armas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab3" data-bs-target="#tab3"
+                            style="color:black;">Logros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab4" data-bs-target="#tab4"
+                            style="color:black;">Duración</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab5" data-bs-target="#tab5"
+                            style="color:black;">Ocultos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab6" data-bs-target="#tab6"
+                            style="color:black;">Enemigos</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane fade show active">
+                        <br>
+                        <h3>Historia</h3>
+                        <p>La historia del juego se desarrolla en un mundo oscuro y misterioso, lleno de peligros y
+                            secretos por descubrir. El pequeño caballero debe enfrentarse a enemigos mortales, descubrir
+                            nuevos poderes y habilidades, y explorar las profundidades de Hallownest para descubrir los
+                            secretos de su pasado y el destino del reino.
+                        </p>
+                            El juego comienza con el pequeño caballero llegando a Hallownest, un reino subterráneo que
+                            ha sido abandonado por sus antiguos habitantes. A medida que explora el mundo, el jugador
+                            descubre que Hallownest ha sido invadido por una plaga mortal, conocida como la Infección,
+                            que ha corrompido a muchos de los seres que lo habitaban y ha causado la desaparición de
+                            otros.
+                        </p>
+                            El pequeño caballero debe recorrer el vasto mundo de Hallownest, luchando contra enemigos
+                            peligrosos y descubriendo habilidades y poderes ocultos. A medida que el jugador explora el
+                            mundo, se encuentra con otros personajes, como la enigmática Hornet, que ayudan al pequeño
+                            caballero en su búsqueda.
+                        </p>
+                            A medida que el jugador avanza en el juego, descubre que Hallownest tiene una rica historia
+                            y una compleja trama de personajes y eventos. El pequeño caballero debe descubrir los
+                            secretos de su propia identidad y el destino del reino mientras lucha para vencer a la
+                            Infección y restaurar la paz en Hallownest.
+                        </p>
+                            En resumen, Hollow Knight es un juego de acción y aventuras con una rica historia y un vasto
+                            mundo subterráneo para explorar. Los jugadores deben enfrentar peligros mortales, descubrir
+                            habilidades y poderes ocultos y desentrañar los secretos de la historia del reino mientras
+                            luchan para restaurar la paz en Hallownest.
+
+                        </p>
+                    </div>
+                    <div id="tab2" class="tab-pane fade">
+                        <br>
+                        <h3>Armas</h3>
+                        <p>La espada del pequeño caballero: es el arma principal del personaje y se utiliza para atacar
+                            a los enemigos.
+                        </p>
+                            El Vengeful Spirit: es un hechizo que dispara un proyectil de energía que puede dañar a los
+                            enemigos.
+                        </p>
+                            El Dash Slash: es una habilidad que permite al jugador atacar mientras se mueve rápidamente
+                            hacia adelante.
+                        </p>
+                            El Cyclone Slash: es un ataque giratorio que causa una gran cantidad de daño a los enemigos.
+                        </p>
+                            La Nail Art: es una habilidad especial que permite al jugador realizar ataques más poderosos
+                            con la espada del pequeño caballero.
+                        </p>
+                            El Shade Soul: es un hechizo avanzado que lanza un gran proyectil de energía que inflige
+                            daño masivo a los enemigos.
+                        </p>
+                            La Dream Nail: es una herramienta que permite al jugador interactuar con ciertos personajes
+                            y lugares de manera única.
+                        </p>
+                            El Howling Wraiths: es un hechizo que produce un grito de energía sónica que causa daño a
+                            los enemigos.
+                        </p>
+                            El Desolate Dive: es una habilidad que permite al jugador realizar un salto y un ataque de
+                            caída, causando daño a los enemigos cercanos.
+                        </p>
+                            La Shade Cloak: es una habilidad que permite al jugador atravesar ciertas barreras y evitar
+                            daño temporalmente.
+                        </p>
+                            Estas son solo algunas de las armas y habilidades disponibles en Hollow Knight. El juego
+                            tiene una gran variedad de opciones de combate, lo que permite a los jugadores adaptar su
+                            estilo de juego según su preferencia.
+
+                        </p>
+                    </div>
+                    <div id="tab3" class="tab-pane fade">
+                        <br>
+                        <h3>Logros</h3>
+                        <p>Saviour (Salvador): Completa el juego en modo normal.
+                        </p>
+                            Steel Heart (Corazón de Acero): Completa el juego sin morir.
+                        </p>
+                            Speed Completion (Finalización rápida): Completa el juego en menos de 10 horas.
+                        </p>
+                            Embrace the Void (Abrazando al Vacío): Completa el DLC de The Grimm Troupe.
+                        </p>
+                            Godmaster (Maestro de los Dioses): Completa el DLC de Godmaster.
+                        </p>
+                            Hunter's Mark (Marca del cazador): Completa todas las entradas de la Guía del cazador.
+                        </p>
+                            Completion Percentage (Porcentaje de finalización): Alcanza el 112% de finalización del
+                            juego.
+                        </p>
+                            Path of Pain (Camino del Dolor): Completa el desafiante DLC de Path of Pain.
+                        </p>
+                            Dream No More (No más sueños): Completa el juego y derrota al jefe final del DLC de The
+                            Grimm Troupe.
+                        </p>
+                            Eternal Emilitia (Emilitia Eterna): Consigue todas las plantillas de Emilitia.
+                        </p>
+                            Sealed Siblings (Hermanos Sellados): Derrota a los jefes de los DLCs de The Grimm Troupe
+                            y Godmaster.
+                        </p>
+                            Nightmare Grimm (Grimm Pesadilla): Derrota a Nightmare King Grimm en el DLC de The Grimm
+                            Troupe.
+                        </p>
+                            Estos son solo algunos de los logros disponibles en el juego Hollow Knight. Hay muchos más
+                            para desbloquear a medida que el jugador progresa en el juego y completa los diversos
+                            desafíos y objetivos.
+
+                        </p>
+                    </div>
+                    <div id="tab4" class="tab-pane fade">
+                        <br>
+                        <h3>Duracion</h3>
+                        <p>La duración del juego Hollow Knight puede variar significativamente dependiendo de varios
+                            factores, como el estilo de juego del jugador, la cantidad de contenido adicional que se
+                            desee explorar y la habilidad del jugador en el combate y la navegación del mapa.
+                        </p>
+                            Si un jugador se enfoca en completar la historia principal y no se dedica a explorar mucho
+                            el mundo del juego, es posible completarlo en alrededor de 20 a 25 horas.
+                        </p>
+                            Sin embargo, si el jugador desea explorar todo el contenido adicional y completar todos los
+                            objetivos y desafíos, la duración del juego puede aumentar significativamente, llegando a
+                            más de 50 horas o incluso más, dependiendo de la cantidad de contenido adicional que se
+                            desee explorar.
+                        </p>
+                            En resumen, la duración del juego Hollow Knight puede variar significativamente dependiendo
+                            del enfoque del jugador, pero se puede esperar que el juego tome al menos 20 horas para
+                            completar la historia principal.
+
+                        </p>
+                    </div>
+                    <div id="tab5" class="tab-pane fade">
+                        <br>
+                        <h3>Ocultos</h3>
+                        <p>La Colmena Real: se encuentra en la zona inferior de Ciudadela del Rey Pálido, oculta detrás
+                            de una pared falsa. Esta área es el hogar de un enjambre de insectos y tiene su propia
+                            mini-historia y jefe.
+                        </p>
+                            La Guarida del Gusano de Cristal: es una cueva oculta en la zona del Jardín de la Reina,
+                            detrás de una pared falsa. Los jugadores pueden encontrar una serie de cristales brillantes
+                            y un jefe secreto dentro de la cueva.
+                        </p>
+                            La Cámara del Nacimiento: se encuentra debajo de la Cuenca de Cristal, en una habitación
+                            secreta detrás de una pared falsa. Los jugadores pueden encontrar una especie de templo y a
+                            un jefe que otorga un fragmento de máscara adicional.
+                        </p>
+                            El Nido del Cazador: es una cueva oculta en la zona del Antiguo Abismo, detrás de una pared
+                            falsa. Los jugadores pueden encontrar a un personaje importante y una habilidad secreta
+                            dentro de la cueva.
+                        </p>
+                            La Fuente del Dolor: es una habitación secreta en la zona de la Cuenca de Cristal, detrás de
+                            una pared falsa. Los jugadores pueden encontrar una máscara adicional en la habitación.
+                        </p>
+                            Estos son solo algunos ejemplos de los lugares ocultos que se pueden encontrar en el juego
+                            Hollow Knight. Hay muchos más lugares secretos en el juego que los jugadores pueden
+                            descubrir por sí mismos explorando y buscando en cada rincón del vasto mundo del juego.
+
+                        </p>
+                    </div>
+                    <div id="tab6" class="tab-pane fade">
+                        <br>
+                        <h3>Enemigos</h3>
+                        <p>Mosquitos: pequeños enemigos voladores que se mueven rápidamente y pueden ser difíciles de
+                            golpear.
+                        </p>
+                            Saltadores verdes: criaturas saltarinas que atacan con embestidas y saltos.
+                        </p>
+                            Caracoles acorazados: enemigos con caparazones que protegen su cuerpo y requieren varios
+                            golpes para derrotarlos.
+                        </p>
+                            Hordas de insectos voladores: enemigos que vuelan en grandes grupos y atacan al jugador en
+                            masa.
+                        </p>
+                            Saltadores gigantes: enemigos grandes y fuertes que saltan y embisten al jugador.
+                        </p>
+                            Escarabajos perforadores: enemigos que emergen del suelo para embestir al jugador.
+                        </p>
+                            Gusanos con púas: enemigos espinosos que se enrollan en una bola y ruedan hacia el jugador.
+                        </p>
+                            Espadachines: enemigos con espadas que atacan en rápidas estocadas.
+                        </p>
+                            Tótems: enemigos que invocan a otros enemigos y lanzan bolas de energía hacia el jugador.
+                        </p>
+                            Magos: enemigos que lanzan bolas de energía y crean barreras para protegerse.
+                        </p>
+                            Estos son solo algunos ejemplos de los enemigos que los jugadores pueden encontrar en el
+                            juego Hollow Knight. Cada enemigo presenta un desafío único, por lo que los jugadores deben
+                            adaptar su estrategia de combate para enfrentarlos de manera efectiva.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Pie de pagina-->
+    <div class="container-fluid">
+        <div class="row p-5 bg-black text-white">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h3">Wiki-Guia</p>
+                <pc class="text-secondary">Santiago, Maipú</pc>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5 mb-3">Informacion</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Integrantes</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Curso</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Hambre</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5 mb-3">Contacto</p>
+                <div class="mb-2">
+                    <i class="bi bi-whatsapp"></i>
+                    <a class="text-secondary text-decoration-none" href="#">WhatsApp</a>
+                </div>
+                <div class="mb-2">
+                    <i class="bi bi-instagram"></i>
+                    <a class="text-secondary text-decoration-none" href="#">Instagram</a>
+                </div>
+                <div class="mb-2">
+                    <i class="bi bi-github"></i>
+                    <a class="text-secondary text-decoration-none" href="#">GitHub</a>
+                </div>
+                <div class="mb-2">
+                    <i class="bi bi-twitter"></i>
+                    <a class="text-secondary text-decoration-none" href="#">Twitter</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5 mb-3">Derechos</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Tems & Conditions</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
