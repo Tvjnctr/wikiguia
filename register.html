@@ -63,32 +63,50 @@
             </div>
         </div>
     </nav>
-    <br><br><br><br>
+    <br><br>
+    <h1>Formulario de Registro</h1>
+    <br><br>
     <div class="container-fluid">
-        <div class="contenedorLogin">
-            <form action="" id="formulario">
+        <div class="contenedorRegister">
+            <form action="" id="regform">
                 <div class="container" id="caja">
-                    <div class="row">
-                        <h1>Iniciar Sesion</h1>
-                    </div>
+                    
+                    <div class="row"></div>
                     <div class="row" id="row1">
                         <div class="col">
-                            <label for="input_usuario" class="form-label">Usuario</label>
-                            <input type="text" class="form-control" id="input_usuario" placeholder="Nombre de Usuario">
+                            <label for="input_nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="input_nombre" placeholder="Nombre de usuario">
+                        </div>
+                        <div class="col"></div>
+                    </div><br>
+                    
+                    <div class="row" id="row1">
+                        <div class="col">
+                            <label for="input_correo" class="form-label">Correo</label>
+                            <input type="text" class="form-control" id="input_correo" placeholder="Ingresa tu correo">
+                        </div>
+                        <div class="col"></div>
+                    </div><br>
+                    <div class="row"></div>
+
+                    <div class="row" id="row2">
+                        <div class="col">
+                            <label for="input_pass1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="input_pass1" placeholder="Ingresa una Contraseña">
                         </div>
                         <div class="col"></div>
                     </div>
                     <br>
                     <div class="row" id="row2">
                         <div class="col">
-                            <label for="input_pass" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="input_pass" placeholder="Contraseña">
+                            <label for="input_pass2" class="form-label">Repite la Contraseña</label>
+                            <input type="password" class="form-control" id="input_pass2" placeholder="Contraseña">
                         </div>
                         <div class="col"></div>
                     </div>
                     <br>
-                    <button type="submit" class="btn btn-dark">Login</button>
-                    <button type="button" class="btn btn-dark" onclick="window.location.href='/register.html'">Registrarse</button>
+                    <br>
+                    <button type="submit" class="btn btn-dark">Registrarse</button>
             </form>
         </div>
     </div>
@@ -145,7 +163,7 @@
             </div>
         </div>
     </Footer>
-    <script src="js/login.js"></script>
+    <script src="js/registro.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
