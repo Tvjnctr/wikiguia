@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
             <!---Icono-->
-            <a class="navbar-brand" href="Index.html">
+            <a class="navbar-brand" href="/">
                 <i class="bi bi-robot"></i>
                 <span class="text-warning">Wiki-Guia</span>
             </a>
@@ -31,13 +31,13 @@
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="Index.html">Inicio</a>
+                        <a class="nav-link active" href="/">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Quienes Somos</a>
+                        <a class="nav-link" href="/about.html">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="juegos.html">Juegos</a>
+                        <a class="nav-link" href="/juegos.html">Juegos</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -55,10 +55,11 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Más...</a>
+                        <a class="nav-link" href="/login.html">Login</a>
                     </li>
                 </ul>
                 <hr class="text-white-50">
+                <!--Boton Informacion-->
                 <form class="d-flex"></form>
                 <button class="btn btn-outline-warning d-none d-md-inline-block" type="submit">Login</button>
             </div>
@@ -94,54 +95,56 @@
 
     <br><br><br>
     <!--Pie de pagina-->
-    <div class="container-fluid">
-        <div class="row p-5 bg-black text-white">
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <p class="h3">Wiki-Guia</p>
-                <pc class="text-secondary">Santiago, Maipú</pc>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <p class="h5 mb-3">Informacion</p>
-                <div class="mb-2">
-                    <a class="text-secondary text-decoration-none" href="#">Integrantes</a>
+    <Footer>
+        <div class="container-fluid">
+            <div class="row p-5 bg-black text-white">
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h3">Wiki-Guia</p>
+                    <pc class="text-secondary">Santiago, Maipú</pc>
                 </div>
-                <div class="mb-2">
-                    <a class="text-secondary text-decoration-none" href="#">Curso</a>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">Informacion</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Integrantes</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Curso</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Hambre</a>
+                    </div>
                 </div>
-                <div class="mb-2">
-                    <a class="text-secondary text-decoration-none" href="#">Hambre</a>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">Contacto</p>
+                    <div class="mb-2">
+                        <i class="bi bi-whatsapp"></i>
+                        <a class="text-secondary text-decoration-none" href="#" onclick="alerta()">WhatsApp</a>
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-instagram"></i>
+                        <a class="text-secondary text-decoration-none" href="#" onclick="alerta()">Instagram</a>
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-github"></i>
+                        <a class="text-secondary text-decoration-none" href="#" onclick="alerta()">GitHub</a>
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-twitter"></i>
+                        <a class="text-secondary text-decoration-none" href="#" onclick="alerta()">Twitter</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <p class="h5 mb-3">Contacto</p>
-                <div class="mb-2">
-                    <i class="bi bi-whatsapp"></i>
-                    <a class="text-secondary text-decoration-none" href="#">WhatsApp</a>
-                </div>
-                <div class="mb-2">
-                    <i class="bi bi-instagram"></i>
-                    <a class="text-secondary text-decoration-none" href="#">Instagram</a>
-                </div>
-                <div class="mb-2">
-                    <i class="bi bi-github"></i>
-                    <a class="text-secondary text-decoration-none" href="#">GitHub</a>
-                </div>
-                <div class="mb-2">
-                    <i class="bi bi-twitter"></i>
-                    <a class="text-secondary text-decoration-none" href="#">Twitter</a>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <p class="h5 mb-3">Derechos</p>
-                <div class="mb-2">
-                    <a class="text-secondary text-decoration-none" href="#">Tems & Conditions</a>
-                </div>
-                <div class="mb-2">
-                    <a class="text-secondary text-decoration-none" href="#">Privacy Policy</a>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">Derechos</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Tems & Conditions</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Privacy Policy</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </Footer>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
