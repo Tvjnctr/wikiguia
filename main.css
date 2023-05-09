@@ -89,6 +89,14 @@ footer div p{
   height: 50vh;
 }
 
+.contenedorLogin{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .contenedor figure{
   position: relative;
   height: 350px;
@@ -154,10 +162,5 @@ footer div p{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.btn btn-warning btn{
-  background-color: aqua;
-  font-size: 100px;
 }
 
