@@ -23,3 +23,8 @@ loginForm.addEventListener("submit", (e) => {
     pass.value = "";
   }
 });
+
+
+function alerta() {
+  alert("Estamos trabajando para habilitar esta función");
+}
