@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="image/icon-.png">
+    <link rel="icon" href="/image/varios/icon.png">
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <title>Wiki-Guia</title>
@@ -54,43 +54,43 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/login.html">Login</a>
-                    </li>
                 </ul>
                 <hr class="text-white-50">
                 <!--Boton Informacion-->
                 <form class="d-flex"></form>
-                <button class="btn btn-outline-warning d-none d-md-inline-block" type="submit">Login</button>
+                <button class="btn btn-outline-warning d-none d-md-inline-block" type="button"
+                    onclick="window.location.href='/login.html'">Login</button>
             </div>
         </div>
     </nav>
     <div class="container-fluid">
-        <br><br>
-        <form action="" id="formulario">
-            <div class="container" id="caja">
-                <div class="row">
-                    <h1>Iniciar Sesion</h1>
-                </div>
-                <div class="row" id="row1">
-                    <div class="col">
-                        <label for="input_usuario" class="form-label">Usuario</label>
-                        <input type="text" class="form-control" id="input_usuario" placeholder="Nombre de Usuario">
+        <div class="contenedor login">
+            <br><br>
+            <form action="" id="formulario">
+                <div class="container" id="caja">
+                    <div class="row">
+                        <h1>Iniciar Sesion</h1>
                     </div>
-                    <div class="col"></div>
-                </div>
-                <br>
-                <div class="row" id="row2">
-                    <div class="col">
-                        <label for="input_pass" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="input_pass" placeholder="Contraseña">
+                    <div class="row" id="row1">
+                        <div class="col">
+                            <label for="input_usuario" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="input_usuario" placeholder="Nombre de Usuario">
+                        </div>
+                        <div class="col"></div>
                     </div>
-                    <div class="col"></div>
-                </div>
-                <br>
-                <br>
-                <button type="submit">Login</button>
-        </form>
+                    <br>
+                    <div class="row" id="row2">
+                        <div class="col">
+                            <label for="input_pass" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="input_pass" placeholder="Contraseña">
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <br>
+                    <br>
+                    <button type="submit">Login</button>
+            </form>
+        </div>
     </div>
 
     <br><br><br>

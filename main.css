@@ -21,11 +21,12 @@
 }
 
 .carousel-caption p {
-  color: rgb(71, 68, 68);
+  color: rgb(122, 122, 122);
 }
 
 /* TEXTO DEBAJO DEL CARRUCEL*/
 .container {
+
 display: block;
 flex-direction: column;
 align-items: center;
@@ -35,22 +36,6 @@ height: 100vh;
 
 h1 {
 text-align: center;
-}
-/*IMAGEN LATERAL */
-.wrapper {
-  background-image: url('image/galaga.jpg');
-  background-repeat: repeat-y;
-  background-size: auto 100%;
-}
-
-.frame {
-  display: flex;
-  height: 100%;
-  margin: 0 100px;
-  background-image: url('image/galaga.jpg'), url('image/galaga.jpg');
-  background-repeat: no-repeat;
-  background-position: left top, right top;
-  background-size: 50% 100%;
 }
 
 footer{
@@ -170,6 +155,7 @@ footer div p{
   justify-content: center;
   align-items: center;
 }
+
 
 
 
