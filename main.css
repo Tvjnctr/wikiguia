@@ -97,6 +97,14 @@ footer div p{
   height: 100vh;
 }
 
+.contenedorRegister{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .contenedor figure{
   position: relative;
   height: 350px;

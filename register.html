@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="image/varios/icon-.png">
+    <link rel="icon" href="/image/varios/icon.png">
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <title>Wiki-Guia</title>
@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
             <!---Icono-->
-            <a class="navbar-brand" href="Index.html">
+            <a class="navbar-brand" href="/">
                 <i class="bi bi-robot"></i>
                 <span class="text-warning">Wiki-Guia</span>
             </a>
@@ -31,13 +31,13 @@
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="Index.html">Inicio</a>
+                        <a class="nav-link active" href="/">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Quienes Somos</a>
+                        <a class="nav-link" href="/about.html">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="juegos.html">Juegos</a>
+                        <a class="nav-link" href="/juegos.html">Juegos</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -58,78 +58,62 @@
                 <hr class="text-white-50">
                 <!--Boton Informacion-->
                 <form class="d-flex"></form>
-                <button class="btn btn-outline-warning d-none d-md-inline-block" type="button" onclick="window.location.href='login.html'">Login</button>
+                <button class="btn btn-outline-warning d-none d-md-inline-block" type="button"
+                    onclick="window.location.href='/login.html'">Login</button>
             </div>
         </div>
     </nav>
-    <!--Imagen lateral-->
-    <div class="wrapper">
-        <div class="wrapper">
-            <div class="frame">
-            </div>
+    <br><br>
+    <h1>Formulario de Registro</h1>
+    <br><br>
+    <div class="container-fluid">
+        <div class="contenedorRegister">
+            <form action="" id="regform">
+                <div class="container" id="caja">
+                    
+                    <div class="row"></div>
+                    <div class="row" id="row1">
+                        <div class="col">
+                            <label for="input_nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="input_nombre" placeholder="Nombre de usuario">
+                        </div>
+                        <div class="col"></div>
+                    </div><br>
+                    
+                    <div class="row" id="row1">
+                        <div class="col">
+                            <label for="input_correo" class="form-label">Correo</label>
+                            <input type="text" class="form-control" id="input_correo" placeholder="Ingresa tu correo">
+                        </div>
+                        <div class="col"></div>
+                    </div><br>
+                    <div class="row"></div>
+
+                    <div class="row" id="row2">
+                        <div class="col">
+                            <label for="input_pass1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="input_pass1" placeholder="Ingresa una Contraseña">
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <br>
+                    <div class="row" id="row2">
+                        <div class="col">
+                            <label for="input_pass2" class="form-label">Repite la Contraseña</label>
+                            <input type="password" class="form-control" id="input_pass2" placeholder="Contraseña">
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <br>
+                    <br>
+                    <button type="submit" class="btn btn-dark">Registrarse</button>
+            </form>
         </div>
     </div>
-    <div class="row jumbotron" id="informacion">
-        <div>
-            <h1 class="h1qs">Wiki-Guia, ¿Quienes somos?</h1><br>
-            <hr>
-            <p class="parrafoqsomos">
-                ¡Hola! Somos un grupo de 3 estudiantes del Instituto DOUC, apasionados por la programación y los
-                videojuegos. Estamos emocionados de presentarte nuestra página web
-                llamada "Wiki-Guía", en la cual compartimos información detallada sobre 10 juegos populares. <br>
 
-                Nuestro objetivo es proporcionar una guía completa y fácil de entender para aquellos interesados en
-                aprender más sobre estos juegos. Nos dedicamos a investigar y
-                recopilar información precisa y actualizada sobre cada juego, incluyendo detalles sobre su jugabilidad,
-                personajes, modos de juego, estrategias y más. <br>
-
-                Como estudiantes de programación, hemos aplicado nuestros conocimientos en HTML para crear una página
-                web funcional y atractiva que sea accesible para cualquier
-                persona interesada en aprender más sobre estos juegos. Nos esforzamos por mantener la página actualizada
-                con información precisa y relevante para proporcionar a
-                nuestros visitantes la mejor experiencia posible. <br>
-
-                ¡Esperamos que encuentres útil y entretenida nuestra Wiki-Guía y que te sirva como una herramienta útil
-                para conocer más sobre los juegos que amas! ¡Gracias por
-                visitar nuestra página y por apoyarnos en nuestro proyecto de programación. Bienvenido/a a nuestra
-                Wiki-Guía! ¡Vamos a jugar! ¡Síguenos en nuestras redes sociales
-                para mantenerte informado/a sobre las últimas actualizaciones y novedades en nuestra página!<strong>
-                    ¡Gracias por tu apoyo! ¡Nos vemos en la Wiki-Guía!</strong>.<br><br><br>
-        </div>
-        <hr>
-        <div class="row jumbotron" id="informacion">
-            <div class="col-lg-6">
-                <div>
-                    <h2 class="h1qs">Misión</h2>
-                    <p class="parrafoqsomos">Proporcionar una guía completa y fácil de entender sobre 10 juegos
-                        populares. <br>
-                        Mantener nuestra página web actualizada con información precisa y relevante.<br>
-                        Crear una experiencia accesible y atractiva para los visitantes interesados en aprender más
-                        sobre los juegos.<br>
-                        Utilizar nuestros conocimientos en programación para crear una página web funcional y de
-                        calidad.<br>
-                        Ofrecer un recurso útil para los amantes de los videojuegos que buscan información detallada
-                        sobre sus juegos favoritos.<br>
-                        Fomentar el intercambio de conocimientos y la comunidad en torno a los juegos en nuestra
-                        plataforma.<br>
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <h3 class="h1qs">Visión</h3>
-                <p class="parrafoqsomos">Nuestra visión en Wiki-Guía es convertirnos en una referencia confiable y
-                    reconocida en el mundo de los juegos, siendo la primera opción para aquellos que
-                    buscan guías completas y actualizadas, y ampliar nuestra comunidad para fomentar el intercambio de
-                    conocimientos y la colaboración entre los aficionados a los videojuegos.
-                    ¡Gracias por tu interés en nuestra visión! ¡Nos vemos en la Wiki-Guía!</p>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <br>
-    <br>
-    <br>
-    <footer>
+    <br><br><br>
+    <!--Pie de pagina-->
+    <Footer>
         <div class="container-fluid">
             <div class="row p-5 bg-black text-white">
                 <div class="col-xs-12 col-md-6 col-lg-3">
@@ -152,19 +136,19 @@
                     <p class="h5 mb-3">Contacto</p>
                     <div class="mb-2">
                         <i class="bi bi-whatsapp"></i>
-                        <a class="text-secondary text-decoration-none" href="#">WhatsApp</a>
+                        <a class="text-secondary text-decoration-none" href="#" onclick="alerta()">WhatsApp</a>
                     </div>
                     <div class="mb-2">
                         <i class="bi bi-instagram"></i>
-                        <a class="text-secondary text-decoration-none" href="#">Instagram</a>
+                        <a class="text-secondary text-decoration-none" href="#" onclick="alerta()">Instagram</a>
                     </div>
                     <div class="mb-2">
                         <i class="bi bi-github"></i>
-                        <a class="text-secondary text-decoration-none" href="#">GitHub</a>
+                        <a class="text-secondary text-decoration-none" href="#" onclick="alerta()">GitHub</a>
                     </div>
                     <div class="mb-2">
                         <i class="bi bi-twitter"></i>
-                        <a class="text-secondary text-decoration-none" href="#">Twitter</a>
+                        <a class="text-secondary text-decoration-none" href="#" onclick="alerta()">Twitter</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 col-lg-3">
@@ -178,8 +162,7 @@
                 </div>
             </div>
         </div>
-    </footer>
-    <script src="js/login.js"></script>
+    </Footer>
     <script src="js/registro.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

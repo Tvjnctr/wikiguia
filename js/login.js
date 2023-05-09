@@ -8,12 +8,6 @@ loginForm.addEventListener("submit", (e) => {
   if (usuario.value == "" || pass.value == "") {
     alert("Existen campos vacios!");
   } 
-  else if (!/\d/.test(pass.value)) {
-    alert("La contraseña debe contener al menos un número!");
-  }
-  else if ((usuario.value).length > 20 || (usuario.value).length < 3 ){
-    alert("El nombre es incorrecto!");
-  }
   else {
     // perform operation with form input
     alert("Login Correcto");
@@ -26,7 +20,6 @@ loginForm.addEventListener("submit", (e) => {
     pass.value = "";
   }
 });
-
 
 function alerta() {
   alert("Estamos trabajando para habilitar esta función");
