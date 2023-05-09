@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="image/icon-.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <title>Wiki-Guia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!---Icono-->
+            <a class="navbar-brand" href="Index.html">
+                <i class="bi bi-robot"></i>
+                <span class="text-warning">Wiki-Guia</span>
+            </a>
+            <!---Boton del menu-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Elementos del menu colapsable-->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="juegos.html">Juegos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" href="#">Compra Aqui</a>
+                        <ul class="dropdown-menu bg-secondary">
+                            <li>
+                                <a class="dropdown-item" href="">Carrito</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="">Compras</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" disable>Proximamente...</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <hr class="text-white-50">
+                <!--Enlaces RRHH
+                <ul class="navbar-nav flex-row flex-wrap text-light">
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <i class="bi bi-twitter"></i>
+                        <small class="d-md-none ms-2">Twitter</small>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <i class="bi bi-github"></i>
+                        <small class="d-md-none ms-2">GitHub</small>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <i class="bi bi-instagram"></i>
+                        <small class="d-md-none ms-2">Instagram</small>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto p-3">
+                        <i class="bi bi-whatsapp"></i>
+                        <small class="d-md-none ms-2">WhatsApp</small>
+                    </li>
+                </ul>-->
+                <!--Boton Informacion-->
+                <form class="d-flex"></form>
+                <button class="btn btn-outline-warning d-none d-md-inline-block" type="submit">Login</button>
+            </div>
+        </div>
+    </nav>
+</head>
+
+<body class="bg-secondary">
+
+    <style>
+        .container-wrapper {
+            display: flex;
+        }
+
+        .container1 {
+            width: 40%;
+            /* adjust the width as needed */
+        }
+
+        .container2 {
+            width: 60%;
+            /* adjust the width as needed */
+        }
+    </style>
+    <div class="container-wrapper">
+        <div class="container1">
+            <img class="img-fluid" src="image\Guia\AssassinsCreedValhalla.jpg"
+                style="padding-left: 30px; padding-top: 180px;">
+        </div>
+        <div class="container2" style="padding-right: 30px;">
+            <!-- content for container 2 goes here -->
+            <div class="container">
+                <h1 class="card-text " style="padding-top: 100px;">Assassins Creed: Valhalla</h1>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#tab1" data-bs-target="#tab1"
+                            style="color:black;">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab2" data-bs-target="#tab2"
+                            style="color:black;">Armas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab3" data-bs-target="#tab3"
+                            style="color:black;">Logros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab4" data-bs-target="#tab4"
+                            style="color:black;">Duración</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab5" data-bs-target="#tab5"
+                            style="color:black;">Ocultos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab6" data-bs-target="#tab6"
+                            style="color:black;">Enemigos</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane fade show active">
+                        <br>
+                        <h3>Historia</h3>
+                        <p>La historia de Assassin's Creed Valhalla se desarrolla en el siglo IX, en la época de los
+                            vikingos. El juego sigue a Eivor, un guerrero vikingo que es parte del clan Raven, que debe
+                            liderar a su pueblo en una lucha por la conquista de Inglaterra. Eivor es un personaje
+                            personalizable y puede ser tanto hombre como mujer.
+                        </p>
+                        El juego comienza en Noruega, donde Eivor y su clan deben huir de su hogar debido a un
+                        ataque de un rey rival. Después de establecer un nuevo hogar en Inglaterra, Eivor y su clan
+                        se enfrentan a varios desafíos y enemigos, incluidos los reyes sajones y la Orden de los
+                        Antiguos, una organización secreta que busca controlar Inglaterra a través del poder.
+                        </p>
+                        Eivor y su clan también se unen a los Asesinos, una organización secreta dedicada a luchar
+                        contra la Orden de los Antiguos y defender la libertad. A lo largo del juego, Eivor debe
+                        descubrir los secretos detrás de la Orden y su conexión con la Primera Civilización, una
+                        antigua raza de seres tecnológicamente avanzados que vivieron hace miles de años.
+                        </p>
+                        La historia de Assassin's Creed Valhalla está llena de giros y sorpresas, y presenta a
+                        varios personajes históricos, como el rey sajón Aelfred el Grande y el vikingo Ragnar
+                        Lothbrok. El juego también presenta un sistema de elecciones que afectan el resultado de la
+                        historia, lo que permite a los jugadores tomar decisiones importantes y moldear el destino
+                        de Eivor y su clan.
+                        </p>
+                        En resumen, Assassin's Creed Valhalla es un juego de acción-aventura que presenta una
+                        emocionante historia en la época de los vikingos, llena de acción, intriga y giros
+                        sorprendentes.
+
+                        </p>
+                    </div>
+                    <div id="tab2" class="tab-pane fade">
+                        <br>
+                        <h3>Armas</h3>
+                        <p>Hachas: hay diferentes tipos de hachas disponibles, desde las más pequeñas y rápidas hasta
+                            las más grandes y poderosas.
+                        </p>
+                        Espadas: las espadas también están disponibles en diferentes tamaños y estilos, y se
+                        utilizan para realizar ataques rápidos y precisos.
+                        </p>
+                        Escudos: los escudos son una herramienta importante para la defensa y se pueden personalizar
+                        con diferentes diseños y materiales.
+                        </p>
+                        Arcos: hay diferentes tipos de arcos, desde los arcos largos para disparar a distancia hasta
+                        los arcos cortos para combates más cercanos.
+                        </p>
+                        Lanzas: las lanzas son armas de largo alcance que se utilizan para atacar a los enemigos
+                        desde la distancia.
+                        </p>
+                        Martillos: los martillos son armas contundentes que pueden infligir un gran daño, aunque son
+                        más lentos que las hachas o las espadas.
+                        </p>
+                        Dagas: las dagas son armas rápidas y mortales que se pueden usar para ataques sigilosos o
+                        rápidos.
+                        </p>
+                        Bastones: los bastones son armas versátiles que se pueden utilizar tanto para atacar como
+                        para bloquear ataques enemigos.
+
+                        </p>
+                    </div>
+                    <div id="tab3" class="tab-pane fade">
+                        <br>
+                        <h3>Logros</h3>
+                        <p>The Saga Begins: desbloqueado al completar el prólogo del juego.
+                        </p>
+                        Equilibrium: desbloqueado al alcanzar el nivel de poder 280.
+                        </p>
+                        Ultimate Refinement: desbloqueado al mejorar una pieza de equipo al nivel máximo.
+                        </p>
+                        Viking Legend: desbloqueado al completar todas las misiones principales del juego.
+                        </p>
+                        Worthy: desbloqueado al obtener una medalla de oro en una misión de la historia.
+                        </p>
+                        The Enemy of My Enemy: desbloqueado al reclutar a un miembro de la Orden de los Antiguos como
+                        aliado.
+                        </p>
+                        Skadi's Hobby: desbloqueado al completar todas las ubicaciones de caza en el juego.
+                        </p>
+                        Builder: desbloqueado al construir todas las mejoras para la colonia de Ravensthorpe.
+                        </p>
+                        Twinkle Twinkle: desbloqueado al conseguir todos los tesoros de la Catedral de Winchester.
+                        </p>
+                        Calling in a Favor: desbloqueado al completar todos los contratos en el juego.
+
+                        </p>
+                    </div>
+                    <div id="tab4" class="tab-pane fade">
+                        <br>
+                        <h3>Duracion</h3>
+                        <p>La duración del juego puede variar dependiendo de la forma en que el jugador decida jugarlo y
+                            del nivel de dificultad que elija. Si el jugador se centra en completar solo la historia
+                            principal, se puede terminar en unas 40-50 horas de juego. Sin embargo, si el jugador decide
+                            explorar el mundo abierto del juego, realizar misiones secundarias, buscar coleccionables y
+                            mejorar su personaje, la duración del juego puede aumentar considerablemente, llegando a más
+                            de 100 horas de juego.
+                        </p>
+                        Además, el juego también cuenta con expansiones de contenido descargable que pueden extender
+                        aún más la duración del juego. En resumen, la duración del juego de Assassin's Creed
+                        Valhalla es bastante larga y variará según la forma de jugar de cada jugador.
+
+                        </p>
+                    </div>
+                    <div id="tab5" class="tab-pane fade">
+                        <br>
+                        <h3>Ocultos</h3>
+                        <p>La Dama del Lago: una ubicación en las Tierras de la Mesa que se encuentra debajo de una
+                            cascada, donde se puede encontrar una espada legendaria.
+                        </p>
+                        La guarida de Ragnarr Loðbrók: una cueva oculta en Rygjafylke que esconde una gran recompensa
+                        para aquellos que se aventuren en ella.
+                        </p>
+                        El gran cairn de Northwic: una torre de piedra oculta en East Anglia que contiene un objeto
+                        misterioso.
+                        </p>
+                        La cueva del ermitaño: una cueva oculta en las montañas al norte de Eurviscire que esconde
+                        secretos y tesoros.
+                        </p>
+                        El Laberinto de las Luces: una misteriosa ubicación subterránea en Essexe que contiene un objeto
+                        valioso.
+                        </p>
+                        </p>
+                    </div>
+                    <div id="tab6" class="tab-pane fade">
+                        <br>
+                        <h3>Enemigos</h3>
+                        <p>Soldados sajones: son los enemigos humanos más comunes en el juego. Son soldados regulares
+                            que patrullan en las ciudades, fortalezas y caminos de Inglaterra.
+                        </p>
+                        Guerreros vikingos rivales: son otros miembros de clanes vikingos que pueden atacar al
+                        jugador durante sus incursiones y exploraciones.
+                        </p>
+                        Animales salvajes: el juego presenta varios animales salvajes como lobos, osos y ciervos,
+                        que pueden atacar al jugador.
+                        </p>
+                        Bestias mitológicas: también hay algunas criaturas mitológicas en el juego, como trolls y
+                        dragones, que representan un desafío mayor para el jugador.
+                        </p>
+                        La Orden de los Antiguos: es un grupo secreto de enemigos que el jugador debe identificar y
+                        eliminar para desentrañar la trama del juego.
+                        </p>
+                        Estos son solo algunos ejemplos de los enemigos que se pueden encontrar en el juego. Cada
+                        enemigo tiene sus propias habilidades y estrategias de combate únicas, lo que hace que los
+                        enfrentamientos sean desafiantes y emocionantes.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Pie de pagina-->
+    <footer>
+        <div>
+            <div class="row p-5 bg-black text-white">
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h3">Wiki-Guia</p>
+                    <pc class="text-secondary">Santiago, Maipú</pc>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">Informacion</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Integrantes</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Curso</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Hambre</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">Contacto</p>
+                    <div class="mb-2">
+                        <i class="bi bi-whatsapp"></i>
+                        <a class="text-secondary text-decoration-none" href="#">WhatsApp</a>
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-instagram"></i>
+                        <a class="text-secondary text-decoration-none" href="#">Instagram</a>
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-github"></i>
+                        <a class="text-secondary text-decoration-none" href="#">GitHub</a>
+                    </div>
+                    <div class="mb-2">
+                        <i class="bi bi-twitter"></i>
+                        <a class="text-secondary text-decoration-none" href="#">Twitter</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <p class="h5 mb-3">Derechos</p>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Tems & Conditions</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-secondary text-decoration-none" href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
