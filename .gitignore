@@ -7798,10 +7798,13 @@ Mienv/Scripts/python_d.exe
 Mienv/Scripts/python.exe
 Mienv/Scripts/pythonw_d.exe
 Mienv/Scripts/pythonw.exe
+<<<<<<< HEAD
 Proyectowiki/__pycache__/__init__.cpython-310.pyc
 Proyectowiki/__pycache__/settings.cpython-310.pyc
 Proyectowiki/__pycache__/urls.cpython-310.pyc
 Proyectowiki/__pycache__/wsgi.cpython-310.pyc
+=======
+>>>>>>> e0ac540dcbaf56a4960aeb0e9766eb4e3f44e01b
 Mienv/Lib/site-packages/typing_extensions.py
 Mienv/Lib/site-packages/Django-4.1.4.dist-info/AUTHORS
 Mienv/Lib/site-packages/Django-4.1.4.dist-info/entry_points.txt
@@ -12990,3 +12993,14 @@ Mienv/Lib/site-packages/tzdata-2023.3.dist-info/top_level.txt
 Mienv/Lib/site-packages/tzdata-2023.3.dist-info/WHEEL
 Mienv/Scripts/django-admin.exe
 Mienv/Scripts/sqlformat.exe
+<<<<<<< HEAD
+=======
+Proyectowiki/__pycache__/__init__.cpython-310.pyc
+Proyectowiki/__pycache__/settings.cpython-310.pyc
+Proyectowiki/__pycache__/urls.cpython-310.pyc
+Proyectowiki/__pycache__/wsgi.cpython-310.pyc
+Proyectowiki/__pycache__/__init__.cpython-310.pyc
+Proyectowiki/__pycache__/settings.cpython-310.pyc
+Proyectowiki/__pycache__/urls.cpython-310.pyc
+Proyectowiki/__pycache__/wsgi.cpython-310.pyc
+>>>>>>> e0ac540dcbaf56a4960aeb0e9766eb4e3f44e01b
