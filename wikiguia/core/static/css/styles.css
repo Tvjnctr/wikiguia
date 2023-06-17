@@ -1,10 +1,7 @@
 .picture-container {
-background-color: #7c7979; /* Replace with your desired grey color */
+background-color: #e0e0e0; /* Replace with your desired grey color */
 border-radius: 10px; /* Adjust the value as per your preference */
 max-width: 600px; /* Adjust the maximum width as per your needs */
 padding: 10px; /* Add padding to give some spacing between the pictures and the container edges */
 }
 
-h1{
-    background-color: blue;
-}
