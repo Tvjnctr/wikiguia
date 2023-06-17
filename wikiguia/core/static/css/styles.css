@@ -1,7 +1,17 @@
 .picture-container {
-background-color: #e0e0e0; /* Replace with your desired grey color */
-border-radius: 10px; /* Adjust the value as per your preference */
-max-width: 600px; /* Adjust the maximum width as per your needs */
-padding: 10px; /* Add padding to give some spacing between the pictures and the container edges */
+background-color: #f0f0f0b2;
+border-radius: 16px; 
+max-width: 500px; 
+padding: 10px; 
+}
+
+.picture-container img {
+    border-radius: 10px;
+}
+
+
+.container{
+    border: solid;
+    border-color: blueviolet;
 }
 
