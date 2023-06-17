@@ -2,21 +2,17 @@
 
 
 {% block title %}
-Home
+    Home
 {% endblock %}
 
 {% block content %}
-<div class="grid grid-cols-3 gap-3">
-    {% for game in games %}
-    <div>
-        <div>
-            <img src="{{game.image.url}}" class="rounded-t-xl">
-        </div>
-        <div>
-            <h2>{{game.name}}</h2>
-            <p>Desc: {{game.description}}</p>
-        </div>
+
+<h1>hello</h1>
+    <div class="container">
+        {% for game in games %}
+            <div class="picture-container">
+                <img class="img-fluid" src="{{ game.image.url }}" alt="Picture 1">
+            </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-</div>
 {% endblock %}

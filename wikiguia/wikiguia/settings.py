@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
     #Aplicaciones Custom
     'core',
-    'games',
+    'game',
 ]
 
 MIDDLEWARE = [
