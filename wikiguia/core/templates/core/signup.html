@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+Registro
+{% endblock %}
+
+{% block content %}
+<div class="container-register-form">
+    <h2>Formulario de registro</h2><br>
+    <form method="POST" action=".">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="" class="form-label">Usuario</label><br>
+            {{ form.username }}
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Correo</label><br>
+            {{ form.email }}
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Password</label><br>
+            {{ form.password1 }}
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Repite Password</label><br>
+            {{ form.password2 }}
+        </div>
+
+        {% if form.errors or form.non_field_errors %}
+        <div class="error-form">
+            {% for field in form %}
+                {{ field.errors }}
+            {% endfor %}
+            
+            {{ form.non_field_errors }}
+        </div>
+        {% endif %}
+        <button class="btn btn-primary">Registrarse</button>
+    </form>
+</div>
+{% endblock %}
