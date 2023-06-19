@@ -4,3 +4,6 @@ wikiguia/core/migrations/__pycache__/
 wikiguia/game/__pycache__/
 wikiguia/wikiguia/__pycache__/
 __pycache__/
+wikiguia/core/__pycache__/forms.cpython-311.pyc
+wikiguia/core/__pycache__/urls.cpython-311.pyc
+wikiguia/wikiguia/__pycache__/settings.cpython-311.pyc

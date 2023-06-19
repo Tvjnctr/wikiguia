@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block content %}
+<div class="container-register-form">
+    <h2>LOGIN</h2><br>
+    <form method="POST" action=".">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="" class="form-label">Usuario</label><br>
+            {{ form.username }}
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Password</label><br>
+            {{ form.password }}
+        </div>
+        {% if form.errors or form.non_field_errors %}
+        <div class="error-form">
+            {% for field in form %}
+                {{ field.errors }}
+            {% endfor %}
+            
+            {{ form.non_field_errors }}
+        </div>
+        {% endif %}
+        <button class="btn btn-primary">Login</button>
+    </form>
+</div>
+{% endblock %}
