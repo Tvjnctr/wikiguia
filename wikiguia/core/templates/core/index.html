@@ -8,7 +8,7 @@ Home
 {% block content %}
 <br>
 <br>
-<div class="container">
+<div class="container" id="slider">
     <div class="carousel-container">
         <div id="carouselExampleDark" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
@@ -21,24 +21,24 @@ Home
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="{{ games.3.image.url }}" class="d-block w-100" alt="...">
+                    <img src="{{ games.3.image_carousel.url }}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1>{{ games.3.name }}</h1>
-                        <p>"LA LUCHA POR LA SUPERVIVENCIA EN UN MUNDO POSTAPOCALÍPTICO"</p>
+                        <h1 id="tittleslider">{{ games.3.name }}</h1>
+                        <p id="textslider">"LA LUCHA POR LA SUPERVIVENCIA EN UN MUNDO POSTAPOCALÍPTICO"</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
                     <img src="{{ games.4.image.url }}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1>{{ games.4.name }}</h1>
-                        <p>"VIVE AL LÍMITE EN UNA CIUDAD LLENA DE PELIGROS Y OPORTUNIDADES"</p>
+                        <h1 id="tittleslider">{{ games.4.name }}</h1>
+                        <p id="textslider">"VIVE AL LÍMITE EN UNA CIUDAD LLENA DE PELIGROS Y OPORTUNIDADES"</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="{{ games.5.image.url }}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1>{{ games.5.name }}</h1>
-                        <p>"LA LUCHA DE LINK POR SALVAR HYRULE"</p>
+                        <h1 id="tittleslider">{{ games.5.name }}</h1>
+                        <p id="textslider">"LA LUCHA DE LINK POR SALVAR HYRULE"</p>
                     </div>
                 </div>
             </div>

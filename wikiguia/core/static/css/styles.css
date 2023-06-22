@@ -1,8 +1,8 @@
 .picture-container {
-background-color: #f0f0f0b2;
-border-radius: 16px; 
-max-width: 500px; 
-padding: 10px; 
+    background-color: #f0f0f0b2;
+    border-radius: 16px; 
+    max-width: 500px; 
+    padding: 10px; 
 }
 
 .picture-container img {
@@ -39,4 +39,30 @@ padding: 10px;
 .error-form {
     background-color: red;
     border: blueviolet solid;
+}
+
+#textslider {
+    color: #bdc3c7;
+    font-stretch: expanded;
+}
+
+#tittleslider {
+    color: black;
+    font-weight: bold;
+}
+
+#slider {
+    border: solid;
+    border-color: transparent;
+}
+
+#futer {
+    background-color: #000000;
+    font-weight: bold;
+}
+
+body {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
 }
