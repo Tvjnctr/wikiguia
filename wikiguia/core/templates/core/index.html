@@ -21,21 +21,21 @@ Home
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="{{ games.3.image_carousel.url }}" class="d-block w-100" alt="...">
+                    <img src="{{ games.3.carousel_image.url }}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 id="tittleslider">{{ games.3.name }}</h1>
                         <p id="textslider">"LA LUCHA POR LA SUPERVIVENCIA EN UN MUNDO POSTAPOCALÍPTICO"</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="{{ games.4.image.url }}" class="d-block w-100" alt="...">
+                    <img src="{{ games.4.carousel_image.url }}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 id="tittleslider">{{ games.4.name }}</h1>
                         <p id="textslider">"VIVE AL LÍMITE EN UNA CIUDAD LLENA DE PELIGROS Y OPORTUNIDADES"</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ games.5.image.url }}" class="d-block w-100" alt="...">
+                    <img src="{{ games.5.carousel_image.url }}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 id="tittleslider">{{ games.5.name }}</h1>
                         <p id="textslider">"LA LUCHA DE LINK POR SALVAR HYRULE"</p>
@@ -84,6 +84,31 @@ Home
                 <a href="{% url 'game:detail' games.2.id %}">Link</a>
             </div>
         </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="container">
+    <div style="background-color: #f2f2f2; padding: 20px; border-radius: 10px;">
+        <h1>"Revive la diversión del pasado: Una guía completa de juegos antiguos para jugar como nuevo"</h1><br>
+        <p style="font-family: Arial, sans-serif; font-size: 18px;">Bienvenido a nuestra guía de videojuegos, donde
+            podrás descubrir todo lo relacionado con los juegos antiguos y nuevos, incluyendo los secretos ocultos
+            de cada uno.
+            Aquí encontrarás información detallada sobre los títulos más emblemáticos de las primeras consolas, así
+            como también sobre los juegos más recientes y populares.<br><br>
+            En nuestra página, podrás explorar la historia detrás de cada juego, desde su creación hasta su
+            lanzamiento, así como también descubrir detalles interesantes sobre los personajes, la trama y el
+            desarrollo del juego en sí.<br>
+            Además, te mostraremos cómo puedes desbloquear elementos ocultos y descubrir easter eggs que quizás
+            nunca supiste que existían.
+            Nuestro objetivo es proporcionarte una experiencia completa para que puedas disfrutar de tus juegos
+            favoritos, nuevos y antiguos, como si fuera la primera vez.<br><br>
+            Nos esforzamos por brindarte información detallada y precisa, para que puedas aprender todo lo que
+            necesitas saber sobre cada juego y convertirte en un experto en el tema.
+            ¡Así que no esperes más y explora nuestra guía de videojuegos! Descubre la historia detrás de tus juegos
+            favoritos y desbloquea sus secretos ocultos para disfrutar de la experiencia de juego más completa
+            posible, tanto en los juegos clásicos como en los nuevos y emocionantes lanzamientos.
+        </p>
     </div>
 </div>
 {% endblock %}
