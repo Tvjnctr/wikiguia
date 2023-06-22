@@ -97,3 +97,12 @@ body {
         line-height: 66px;
 	}
 }
+
+#desctarg {
+    color: #bdc3c7;
+}
+
+#desctarti {
+    color: white;
+    font-weight: bold;
+}

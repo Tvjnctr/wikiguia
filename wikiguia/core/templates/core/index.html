@@ -66,15 +66,15 @@ Home
         <div class="col-md-4">
             <div class="picture-container">
                 <img class="img-fluid" src="{{ games.6.carousel_image.url }}" alt="Picture 1">
-                <p>{{ games.6.name }}</p>
-                <p>{{ games.6.description }}</p>
+                <p id="desctarti"><strong>{{ games.6.name }}</strong></p>
+                <p id="desctarg">{{ games.6.description }}</p>
                 <a href="{% url 'game:detail' games.6.id %}">Link</a>
             </div>
         </div>
         <div class="col-md-4">
             <div class="picture-container">
                 <img class="img-fluid" src="{{ games.1.image.url }}" alt="Picture 2">
-                <p>{{ games.1.name }}</p>
+                <p id="desctarti"><strong>{{ games.1.name }}</strong>></p>
                 <p>{{ games.1.description }}</p>
                 <a href="{% url 'game:detail' games.1.id %}">Link</a>
             </div>
