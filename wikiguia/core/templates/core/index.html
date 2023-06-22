@@ -20,7 +20,7 @@ Home
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                {% for game in games %}
+                {% for game in games|slice:":3" %}
                 <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="10000">
                     <img src="{{ game.carousel_image.url }}" class="d-block w-100" alt="{{ game.name }}">
                     <div class="carousel-caption d-none d-md-block">
@@ -52,14 +52,14 @@ Home
     <br>
     <div class="row">
         {% for game in games %}
-            <div class="col-md-4">
-                <div class="picture-container">
-                    <img class="img-fluid" src="{{ game.image.url }}" alt="Picture 1">
-                    <p id="desctarti"><strong>{{ game.name }}</strong></p>
-                    <p id="desctarg">{{ game.description }}</p>
-                    <a href="{% url 'game:detail' game.id %}">Link</a>
-                </div>
+        <div class="col-md-4">
+            <div class="picture-container">
+                <img class="img-fluid" src="{{ game.image.url }}" alt="Picture 1">
+                <p id="desctarti"><strong>{{ game.name }}</strong></p>
+                <p id="desctarg">{{ game.description }}</p>
+                <a class="bottom-link" href="{% url 'game:detail' game.id %}">Ver Guia</a>
             </div>
+        </div>
         {% endfor %}
     </div>
 </div>
