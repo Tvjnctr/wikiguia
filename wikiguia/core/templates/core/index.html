@@ -10,7 +10,7 @@ Home
 <br>
 <div class="container" id="slider">
     <div class="carousel-container">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div id="carouselExampleDark" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -20,7 +20,7 @@ Home
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                {% for game in games|slice:":3" %}
+                {% for game in games|slice:"9:12" %}
                 <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="10000">
                     <img src="{{ game.carousel_image.url }}" class="d-block w-100" alt="{{ game.name }}">
                     <div class="carousel-caption d-none d-md-block">
@@ -51,7 +51,7 @@ Home
 <div class="container">
     <br>
     <div class="row">
-        {% for game in games %}
+        {% for game in games|slice:"3:9" %}
         <div class="col-md-4">
             <div class="picture-container">
                 <img class="img-fluid" src="{{ game.image.url }}" alt="Picture 1">

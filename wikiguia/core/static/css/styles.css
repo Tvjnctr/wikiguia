@@ -20,7 +20,7 @@
     background-color: #ffffff;
     outline: none;
     display: block;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-right: auto;
 }
 
@@ -31,7 +31,7 @@ label[for="id_data_enemies"]
  {
     color: #ffffff;
     margin-top: 7px;
-    padding-left: 10px;
+    margin-left: 30px;
     font-weight:bold;
 }
 
@@ -45,7 +45,7 @@ label[for="id_data_enemies"]
 .btn_new_game_form {
     color: #000000;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 30px;
     background-color: #ffc107;
     border-color: #ffc107;
     padding: 6px 50px ;
@@ -64,9 +64,9 @@ label[for="id_data_enemies"]
 }
 
 .new-game-title {
-    padding-top: 5%;
+    padding-top: 2%;
     color: rgb(255, 255, 255);
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 
@@ -106,12 +106,13 @@ body {
 
 /*SECCION TARJETAS JUEGOS*/
 .picture-container {
-    background: linear-gradient(to right, #414345, #232526);
+    /* background: linear-gradient(to right, #414345, #232526); */
+    background-color: #d4d4d428;
     border-radius: 10px;
     max-width: 500px;
     min-height: 650px;
     max-height: 800px;
-    padding: 20px;
+    padding: 12px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -126,6 +127,7 @@ body {
 
 .bottom-link {
     margin-top: auto;
+    color: #bdc3c7;
 }
 
 #desctarg {
@@ -137,7 +139,6 @@ body {
     color: white;
     font-weight: bold;
 }
-
 
 #desctarg {
     color: #bdc3c7;
@@ -153,22 +154,32 @@ body {
 
 
 /*SECCION CAROUSEL INDEX*/
-#textslider {
+.text-slider {
     color: #bdc3c7;
     font-stretch: expanded;
 }
 
-#tittleslider {
-    color: black;
+.title-slider {
+    color: rgb(230, 230, 230);
     font-weight: bold;
 }
 
-#slider {
+.slide {
     border: solid;
     border-color: transparent;
+    color: #bdc3c7; 
+    background-color: #d4d4d428;
+    border-radius: 5px;
+    padding: 7px;
 }
 
+.carousel-indicators button {
+    background-color: #bdc3c7;
+}
 
+.carousel-indicators .active {
+    background-color: #414345;
+}
 
 
 
