@@ -4,12 +4,15 @@ from .models import Game
 class NewItemForm(forms.ModelForm):
     class Meta:
         model = Game
-        fields = ('name','description','release_date','is_visible','image','carousel_image',)
+        fields = ('name','description','description_short','release_date','is_visible','image','carousel_image',)
         widgets = {
             'name' : forms.TextInput(attrs={
                 'class' : 'input_form_box'
             }),
             'description' : forms.Textarea(attrs={
+                'class' : 'input_form_box'
+            }),
+            'description_short' : forms.Textarea(attrs={
                 'class' : 'input_form_box'
             }),
             'release_date' : forms.DateInput(attrs={
