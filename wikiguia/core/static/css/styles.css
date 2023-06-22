@@ -1,20 +1,7 @@
-.picture-container {
-    /*background-color: #f0f0f0b2;*/
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
-    border-radius: 16px; 
-    max-width: 500px; 
-    padding: 10px; 
-}
-
-.picture-container img {
-    border-radius: 10px;
-}
-
-.container{
+/*SECCION DEV PARA PRUEBAS*/
+.container {
     border: solid;
-    border-color: transparent;
+    border-color: blueviolet;
 }
 
 .container-lg {
@@ -22,27 +9,138 @@
     border-color: blueviolet;
 }
 
+.container-register-form {
+    background-color: #f0f0f000;
+    border-radius: 16px;
+    max-width: 600px;
+    padding-bottom: 10px;
+    border: blueviolet solid;
+}
+
+.col-md-6 {
+  border: solid;
+  border-color: blueviolet; 
+}
+
+.text-section {
+    border: solid;
+    border-color: rgb(173, 118, 224); 
+}
+
+
+
+/*SECCION DETAILS*/
+.text-section {
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECCION NEW GUIDE*/
 .input_form_box {
     border-style: hidden;
     border-radius: 10px;
-    padding: 15px;
+    width: 350px;
+    height: 40px;
+    padding: 8px;
     font-size: 16px;
     background-color: #ffffff;
     outline: none;
-  }
-  
-.container-register-form{
-    background-color: #f0f0f0b2;
-    border-radius: 16px; 
-    max-width: 600px; 
-    padding-bottom: 10px; 
-    border: blueviolet solid;
+    display: block;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+label[for="id_name"],label[for="id_description"],label[for="id_description_short"],label[for="id_release_date"],
+label[for="id_is_visible"],label[for="id_image"],label[for="id_carousel_image"],label[for="id_data_lore"],
+label[for="id_data_weapons"],label[for="id_data_achievements"],label[for="id_data_playtime"],label[for="id_data_easter_eggs"],
+label[for="id_data_enemies"]
+ {
+    color: #ffffff;
+    margin-top: 7px;
+    padding-left: 10px;
+    font-weight:bold;
+}
+
+#id_is_visible {
+    margin-top: 3px;
+    height: 20px;
+    padding: 0px;
+    width: 20px;
+}
+
+.btn_new_game_form {
+    color: #000000;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    padding: 6px 50px ;
+    font-size: larger;
+}
+
+.btn_new_game_form:hover {
+    background-color: #ffda6b!important;
+    border-color: #ffda6b!important;
+    color: #000000!important;
 }
 
 .error-form {
     background-color: red;
     border: blueviolet solid;
 }
+
+.new-game-title {
+    padding-top: 5%;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+
+
+
+/*SECCION HTML BASE*/
+.btn-primary {
+    color: #000000;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-primary:hover {
+    background-color: #ffda6b!important;
+    border-color: #ffda6b!important;
+    color: #000000!important;
+}
+
+
+
+
+.picture-container {
+    /*background-color: #f0f0f0b2;*/
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 16px;
+    max-width: 500px;
+    padding: 10px;
+}
+
+.picture-container img {
+    border-radius: 10px;
+}
+
+
 
 #textslider {
     color: #bdc3c7;
@@ -65,37 +163,42 @@
 }
 
 body {
-    background: #536976;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #536976;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-.btn-wsp{
-    position:fixed;
-    width:60px;
-    height:60px;
+.btn-wsp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
     line-height: 63px;
-    bottom:25px;
-    right:25px;
-    background:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:35px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
-    z-index:100;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
     transition: all 300ms ease;
 }
-.btn-wsp:hover{
+
+.btn-wsp:hover {
     background: #20ba5a;
 }
-@media only screen and (min-width:320px) and (max-width:768px){
-    .btn-wsp{
-        width:63px;
-        height:63px;
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .btn-wsp {
+        width: 63px;
+        height: 63px;
         line-height: 66px;
-	}
+    }
 }
 
 #desctarg {

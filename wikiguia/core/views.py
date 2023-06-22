@@ -4,7 +4,7 @@ from . forms import SignupForm
 # Create your views here.
 
 def index(request):  
-    games = Game.objects.filter(is_visible=True)  
+    games = Game.objects.filter(is_visible=True)[:3]  
     return render(request, 'core/index.html',{
         'games' : games,
     })
