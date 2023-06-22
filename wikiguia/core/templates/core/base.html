@@ -9,13 +9,15 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   {% load static %}
   <link rel="stylesheet" type="text/css" href="{% static '/css/styles.css' %}">
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">Wikiguia</a>
+        <a class="navbar-brand text-warning" href="/">Wiki-Guia</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -26,11 +28,29 @@
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Juegos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/contact">Contacto</a>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" href="#">Compra Aqui</a>
+              <ul class="dropdown-menu bg-secondary">
+                  <li>
+                      <a class="dropdown-item" href="">Carrito</a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" href="">Compras</a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" disable>Proximamente...</a>
+                  </li>
+              </ul>
+          </li>
           </ul>
           <li class="nav-item">
             <a class="btn btn-primary" href="/games/new" role="button">ADD GAME</a>
@@ -55,26 +75,6 @@
 
   <footer class="text-center text-lg-start bg-dark text-muted">
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-      <div>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
     </section>
     <section class="">
       <div class="container text-center text-md-start mt-5">
@@ -109,15 +109,19 @@
               Contacto
             </h6>
             <p>
+              <i class="fab fa-whatsapp"></i>
               <a href="#!" class="text-reset">WhatsApp</a>
             </p>
             <p>
+              <i class="fab fa-instagram"></i>
               <a href="#!" class="text-reset">Instagram</a>
             </p>
             <p>
+              <i class="fab fa-github"></i>
               <a href="#!" class="text-reset">GitHub</a>
             </p>
             <p>
+              <i class="fab fa-twitter"></i>
               <a href="#!" class="text-reset">Twitter</a>
             </p>
           </div>
@@ -133,9 +137,9 @@
         </div>
       </div>
     </section>
-    <div class="text-center p-4" style="background-color: rgba(255, 255, 255, 0.05);">
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.363);">
       © 2023
-      <a class="text-reset fw-bold" href="https://google.cl/">Wikiguia Devs</a>
+      <a class="text-reset fw-bold" href="https://google.cl/">Wikiguia-Devs</a>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

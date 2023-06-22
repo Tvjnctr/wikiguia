@@ -56,16 +56,19 @@ Home
     </div>
 </div>
 <br>
+<a href="https://api.whatsapp.com/send?phone=56962399657" class="btn-wsp" target="_blank">
+    <i class="fa fa-whatsapp icono"></i>
+</a>
 <br>
 <div class="container">
     <br>
     <div class="row">
         <div class="col-md-4">
             <div class="picture-container">
-                <img class="img-fluid" src="{{ games.0.image.url }}" alt="Picture 1">
-                <p>{{ games.0.name }}</p>
-                <p>{{ games.0.description }}</p>
-                <a href="{% url 'game:detail' games.0.id %}">Link</a>
+                <img class="img-fluid" src="{{ games.6.carousel_image.url }}" alt="Picture 1">
+                <p>{{ games.6.name }}</p>
+                <p>{{ games.6.description }}</p>
+                <a href="{% url 'game:detail' games.6.id %}">Link</a>
             </div>
         </div>
         <div class="col-md-4">
@@ -111,4 +114,6 @@ Home
         </p>
     </div>
 </div>
+<br>
+<br>
 {% endblock %}
