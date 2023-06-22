@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<div class="container">
+    <br>
+    <div class="row">
+        {% for game in games %}
+            <div class="col-md-4">
+                <div class="picture-container">
+                    <img class="img-fluid" src="{{ game.image.url }}" alt="Picture 1">
+                    <p id="desctarti"><strong>{{ game.name }}</strong></p>
+                    <p id="desctarg">{{ game.description }}</p>
+                    <a href="{% url 'game:detail' game.id %}">Link</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+<br>
+<br>
+{% endblock %}
