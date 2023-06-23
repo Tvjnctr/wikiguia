@@ -3,23 +3,25 @@
 {% block title %}New Game{% endblock %}
 
 {% block content %}
-<h1 class="new-game-title">Publicar Guia</h1><br>
-<div class="container-register-form">
-    <form method="post" action="." enctype="multipart/form-data">
-        {% csrf_token %}
-        <div>
-            {{ form.as_p }}
-        </div>
-        {% if form.errors or form.non_field_errors %}
-        <div class="error-form">
-            {% for field in form %}
-            {{ field.errors }}
-            {% endfor %}
+<div class="container12">
+    <div class="container-register-form">
+        <h1 class="new-game-title">Publicar Guia</h1><br>
+        <form method="post" action="." enctype="multipart/form-data">
+            {% csrf_token %}
+            <div>
+                {{ form.as_p }}
+            </div>
+            {% if form.errors or form.non_field_errors %}
+            <div class="error-form">
+                {% for field in form %}
+                {{ field.errors }}
+                {% endfor %}
 
-            {{ form.non_field_errors }}
-        </div>
-        {% endif %}
-        <button class="btn btn-primary btn_new_game_form">Crear</button>
-    </form><br>
+                {{ form.non_field_errors }}
+            </div>
+            {% endif %}
+            <button class="btn btn-primary btn_new_game_form">Crear</button>
+        </form><br>
+    </div>
 </div>
 {% endblock %}
