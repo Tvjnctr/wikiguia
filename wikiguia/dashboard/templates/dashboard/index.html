@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+
+
+{% block title %}
+Panel de Administrador
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <br>
+    <div class="row">
+        {% for game in games %}
+        <div class="col-lg-2">
+            <div class="picture-container">
+                <a href="{% url 'game:detail' game.id %}">
+                    <img class="img-fluid" src="{{ game.image.url }}" alt="Picture 1">
+                </a>
+                <p id="desctarti"><strong>{{ game.name }}</strong></p>
+                <a class="btn btn-primary admin-cp-view" href="{% url 'game:detail' game.id %}" role="button">Ver</a>
+                <a class="btn btn-primary admin-cp-edit" href="{% url 'game:detail' game.id %}" role="button">Modificar</a>
+                <a class="btn btn-primary admin-cp-delete" href="DESACTIVADO" role="button">Eliminar</a>
+                <!-- DESACTIVADO 
+                <a class="btn btn-primary" href="{% url 'game:delete' game.id %}" role="button">Eliminar</a> -->
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

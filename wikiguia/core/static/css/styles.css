@@ -1,3 +1,34 @@
+/*SECCION DASHBOARD*/
+.btn-primary.admin-cp-delete {
+    background-color: #f85c4e;
+    border-color: #f85c4e;
+    padding: 5px 50px 5px 50px;
+    margin-bottom: 4%;
+}
+
+.btn-primary.admin-cp-delete:hover {
+    background-color: #d6584d!important;
+    border-color: #d6584d!important;
+}
+
+.btn-primary.admin-cp-edit {
+    padding: 5px 45px 5px 45px;
+    margin-bottom: 4%;
+}
+
+.btn-primary.admin-cp-view {
+    padding: 5px 68px 5px 68px;
+    margin-bottom: 4%;
+}
+
+
+
+
+
+
+
+
+
 /*SECCION DETAILS*/
 .text-section {
     color: #ffffff;

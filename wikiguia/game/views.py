@@ -27,3 +27,11 @@ def new(request):
     return render(request, 'game/form.html', {
         'form':form
     })
+
+
+@login_required
+def delete(request,pk):
+    game = get_object_or_404(Game, pk=pk)
+    game.delete()
+
+    return redirect('dashboard:index')
