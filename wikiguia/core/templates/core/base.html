@@ -51,19 +51,18 @@
                 </li>
               </ul>
             </li>
+            {% if request.user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link nav-link-admin" href="/dashboard">Admin Panel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-admin" href="/games/new">Subir Guia</a>
+            </li>
+            {% else %}
+            {% endif %}
           </ul>
           {% if request.user.is_authenticated %}
-          <li class="nav-item">
-            <a class="btn btn-primary" href="/games/new" role="button">Nueva Guia</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-primary" href="/dashboard" role="button">Admin Panel</a>
-          </li>
           {% else %}
-          <!-- DESACTIVADO  -->
-          <!-- <li class="nav-item">
-            <a class="btn btn-primary" href="/signup" role="button">SIGNUP</a>
-          </li> -->
           <li class="nav-item">
             <a class="btn btn-primary" href="/login" role="button">LOGIN</a>
           </li>

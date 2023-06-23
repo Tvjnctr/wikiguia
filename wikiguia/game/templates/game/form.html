@@ -4,7 +4,7 @@
 
 {% block content %}
     <div class="container-register-form">
-        <h1 class="new-game-title">Publicar Guia</h1><br>
+        <h1 class="new-game-title">Editor de Guias</h1><br>
         <form method="post" action="." enctype="multipart/form-data">
             {% csrf_token %}
             <div>
@@ -19,7 +19,7 @@
                 {{ form.non_field_errors }}
             </div>
             {% endif %}
-            <button class="btn btn-primary btn_new_game_form">Crear</button>
+            <button class="btn btn-primary btn-new-guide">Guardar</button>
         </form><br>
     </div>
 {% endblock %}D
