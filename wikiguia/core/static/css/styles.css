@@ -27,8 +27,6 @@
     #game-card-title {
         margin-top: 20px;
         color: rgb(239, 239, 239);
-        font-weight: normal;
-        background-color: #25d366;
     }
 
     .container-game-card-title {
@@ -44,6 +42,7 @@
     min-height: auto;
     max-height: auto;
 }
+
 /*-----FIN------*/
 
 
@@ -68,6 +67,7 @@
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
     filter: brightness(120%);
 }
+
 /*-----FIN------*/
 
 
@@ -84,6 +84,16 @@
     margin-left: 0px;
 }
 
+@media screen and (max-width: 412px) {
+    .input_form_box.login-container-form {
+        width: 150px;
+    }
+
+    .container-register-form.login-container-form {
+        padding-left: 40px;
+    }
+}
+
 .login-title {
     padding-top: 2%;
     color: rgb(255, 255, 255);
@@ -96,21 +106,13 @@
     font-weight: bold;
 }
 
-.btn-login {
+.btn.btn-primary.btn-login {
     color: #000000;
     margin-top: 20px;
-    background-color: #ffc107;
-    border-color: #ffc107;
-    padding: 6px 50px !important;
-    font-size: medium !important;
-    font-weight: 500 !important;
+    padding: 0px;
+    width: 300px;
 }
 
-.btn-login:hover {
-    background-color: #ffda6b !important;
-    border-color: #ffda6b !important;
-    color: #000000 !important;
-}
 /*-----FIN------*/
 
 
@@ -140,6 +142,30 @@
 @media screen and (max-width: 500px) {
     .input_form_box {
         width: 200px;
+        margin-left: 5px;
+    }
+
+    label[for="id_name"],
+    label[for="id_description"],
+    label[for="id_description_short"],
+    label[for="id_release_date"],
+    label[for="id_is_visible"],
+    label[for="id_image"],
+    label[for="id_carousel_image"],
+    label[for="id_data_lore"],
+    label[for="id_data_weapons"],
+    label[for="id_data_achievements"],
+    label[for="id_data_playtime"],
+    label[for="id_data_easter_eggs"],
+    label[for="id_data_enemies"] {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .input_form_box {
+        width: 150px;
+        margin-left: 0px;
     }
 }
 
@@ -171,7 +197,7 @@ label[for="id_data_enemies"] {
 
 .btn-new-guide {
     margin-left: 30px;
-    width: 30%!important ;
+    width: 30% !important;
 }
 
 .btn-new-guide:hover {
@@ -190,6 +216,7 @@ label[for="id_data_enemies"] {
     color: rgb(255, 255, 255);
     margin-left: 30px;
 }
+
 /*-----FIN------*/
 
 
@@ -203,6 +230,11 @@ label[for="id_data_enemies"] {
 .nav-link.nav-link-admin:hover {
     font-weight: 300;
     color: #d7d7d7;
+}
+
+.btn.btn-primary.btn-login-base {
+    padding: 3px;
+    width: 80px;
 }
 
 .btn-primary {
@@ -229,9 +261,11 @@ body {
     background: linear-gradient(to bottom, #363f4a, #1f262e);
 }
 
-.fas.fa-gem.me-3,.text-uppercase.fw-bold.mb-4 {
+.fas.fa-gem.me-3,
+.text-uppercase.fw-bold.mb-4 {
     color: #ffc107;
 }
+
 /*-----FIN------*/
 
 
@@ -296,6 +330,7 @@ body {
     padding-top: 2%;
     padding-bottom: 4%;
 }
+
 /*-----FIN------*/
 
 
@@ -330,6 +365,7 @@ body {
 .carousel-indicators .active {
     background-color: #6e6e6e;
 }
+
 /*-----FIN------*/
 
 
