@@ -123,6 +123,7 @@ body {
 
 .picture-container img {
     border-radius: 10px;
+    margin-top: 3px;
 }
 
 .bottom-link {
@@ -155,31 +156,34 @@ body {
 
 /*SECCION CAROUSEL INDEX*/
 .text-slider {
-    color: #bdc3c7;
+    color: #ffffff;
     font-stretch: expanded;
+    font-size: 1.3rem;
 }
 
 .title-slider {
-    color: rgb(230, 230, 230);
+    color: rgb(255, 255, 255);
     font-weight: bold;
+    font-size: 2.8rem;
 }
 
 .slide {
     border: solid;
     border-color: transparent;
-    color: #bdc3c7; 
+    color: #ffffff; 
     background-color: #d4d4d428;
     border-radius: 5px;
     padding: 7px;
 }
 
 .carousel-indicators button {
-    background-color: #bdc3c7;
+    background-color: #ffffff;
 }
 
 .carousel-indicators .active {
-    background-color: #414345;
+    background-color: #6e6e6e;
 }
+
 
 
 
