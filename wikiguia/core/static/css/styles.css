@@ -77,8 +77,9 @@ label[for="id_data_enemies"]
     margin-left: 30px;
     background-color: #ffc107;
     border-color: #ffc107;
-    padding: 6px 50px ;
-    font-size: larger;
+    padding: 6px 50px!important ;
+    font-size:medium!important;
+    font-weight: 500!important;
 }
 
 .btn_new_game_form:hover {
@@ -109,17 +110,15 @@ label[for="id_data_enemies"]
     color: #000000;
     background-color: #ffc107;
     border-color: #ffc107;
+    padding: 3px;
+    font-size:medium;
+    font-weight: 500;
 }
 
 .btn-primary:hover {
     background-color: #ffda6b!important;
     border-color: #ffda6b!important;
     color: #000000!important;
-}
-
-.footer {
-    background-color: #000000;
-    font-weight: bold;
 }
 
 body {
