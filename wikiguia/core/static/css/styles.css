@@ -3,7 +3,28 @@
     color: #ffffff;
 }
 
+/* .picture-container-d {
+    background-color: #d4d4d428;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.236);
+} */
 
+.picture-container-d img {
+    width: 80%;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    background-color: #d4d4d428;
+    padding: 2%;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.236);
+}
+
+.picture-container-d img:hover {
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    filter: brightness(120%);
+}
 
 
 
@@ -16,7 +37,6 @@
     padding: 30px;
     margin: 40px 60px 60px;
     border-radius: 15px;
-
 }
 
 .input_form_box {
