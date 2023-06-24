@@ -21,17 +21,17 @@ class SignupForm(UserCreationForm):
     
     username = forms.CharField(widget=forms.TextInput(attrs={
         'placeholder':'Tu Usuario',
-        'class':'input_form_box',
+        'class':'input_form_box login-container-form',
     }))
     email = forms.CharField(widget=forms.EmailInput(attrs={
         'placeholder':'Tu correo',
-        'class':'input_form_box',
+        'class':'input_form_box login-container-form',
     }))
     password1 = forms.CharField(widget=forms.PasswordInput(attrs={
         'placeholder':'Ingresa Contraseña',
-        'class':'input_form_box',
+        'class':'input_form_box login-container-form',
     }))
     password2 = forms.CharField(widget=forms.PasswordInput(attrs={
         'placeholder':'Repite la Contraseña',
-        'class':'input_form_box',
+        'class':'input_form_box login-container-form',
     }))

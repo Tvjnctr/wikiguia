@@ -5,6 +5,8 @@ Panel de Administrador
 {% endblock %}
 
 {% block content %}
+{% if request.user.is_authenticated %}
+{% if request.user.is_superuser or request.user.is_staff %}
 <div class="container container-guides-admin-panel">
     <div class="row">
         {% for game in games %}
@@ -17,14 +19,28 @@ Panel de Administrador
                     <p id="game-card-title"><strong>{{ game.name }}</strong></p>
                 </div>
                 <div class="container">
-                    <a class="btn btn-primary admin-cp-view" href="{% url 'game:detail' game.id %}" role="button">Ver</a>
-                    <a class="btn btn-primary admin-cp-edit" href="{% url 'game:edit' game.id %}" role="button">Modificar</a>
+                    <a class="btn btn-primary admin-cp-view" href="{% url 'game:detail' game.id %}"
+                        role="button">Ver</a>
+                    <a class="btn btn-primary admin-cp-edit" href="{% url 'game:edit' game.id %}"
+                        role="button">Modificar</a>
                     <a class="btn btn-primary admin-cp-delete" href="DESACTIVADO" role="button">Eliminar</a>
-                    <!-- "{% url 'game:delete' game.id %}" -->
-                </div>              
+                    "{% url 'game:delete' game.id %}"
+                </div>
             </div>
         </div>
         {% endfor %}
     </div>
 </div>
+{% else %}
+<div class="container wrong-auth">
+    <h1>NO POSEES PERMISOS PARA VER ESTA SECCIÓN</h1>
+</div>
+{% endif %}
+{% else %}
+{% endif %}
+
+
+
+
+
 {% endblock %}

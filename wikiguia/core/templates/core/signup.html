@@ -5,24 +5,24 @@ Registro
 {% endblock %}
 
 {% block content %}
-<div class="container-register-form">
-    <h2>Formulario de registro</h2><br>
+<div class="container-register-form login-container-form">
+    <h1 class="login-title">Registro</h1><br>
     <form method="POST" action=".">
         {% csrf_token %}
         <div class="mb-3">
-            <label for="" class="form-label">Usuario</label><br>
+            <label for="" class="form-label-login">Usuario</label><br>
             {{ form.username }}
         </div>
         <div class="mb-3">
-            <label for="" class="form-label">Correo</label><br>
+            <label for="" class="form-label-login">Correo</label><br>
             {{ form.email }}
         </div>
         <div class="mb-3">
-            <label for="" class="form-label">Password</label><br>
+            <label for="" class="form-label-login">Password</label><br>
             {{ form.password1 }}
         </div>
         <div class="mb-3">
-            <label for="" class="form-label">Repite Password</label><br>
+            <label for="" class="form-label-login">Repite Password</label><br>
             {{ form.password2 }}
         </div>
 
@@ -35,7 +35,7 @@ Registro
             {{ form.non_field_errors }}
         </div>
         {% endif %}
-        <button class="btn btn-primary">Registrarse</button>
+        <button class="btn btn-primary btn-login">Registrarse</button>
     </form>
 </div>
 {% endblock %}

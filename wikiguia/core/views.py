@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import logout
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from game.models import Game
 from . forms import SignupForm
@@ -13,6 +14,7 @@ def index(request):
 
 def contact(request):
     return render(request, 'core/contact.html')
+
 
 def guides(request):
     games = Game.objects.filter(is_visible=True)

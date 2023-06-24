@@ -52,12 +52,15 @@
               </ul>
             </li>
             {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser or request.user.is_staff %}
             <li class="nav-item">
               <a class="nav-link nav-link-admin" href="/dashboard">Admin Panel</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-admin" href="/games/new">Subir Guia</a>
             </li>
+            {% else %}
+            {% endif %}
             {% else %}
             {% endif %}
           </ul>
@@ -68,6 +71,9 @@
           {% else %}
           <li class="nav-item">
             <a class="btn btn-primary btn-login-base" href="/login" role="button">LOGIN</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary btn-signup" href="/signup" role="button">REGISTRARSE</a>
           </li>
           {% endif %}
         </div>
