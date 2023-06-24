@@ -1,4 +1,6 @@
 from django.shortcuts import render, redirect
+from django.contrib.auth import logout
+from django.contrib import messages
 from game.models import Game
 from . forms import SignupForm
 # Create your views here.
@@ -33,3 +35,10 @@ def signup(request):
     return render(request, 'core/signup.html',{
         'form':form
     })
+
+
+def admin_logout(request):
+    logout(request)
+    messages.success(request,"Logout correcto")
+
+    return redirect('core:index')

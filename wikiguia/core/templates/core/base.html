@@ -62,6 +62,9 @@
             {% endif %}
           </ul>
           {% if request.user.is_authenticated %}
+          <li class="nav-item">
+            <a class="btn btn-primary btn-login-base" href="{% url 'core:logout' %}" role="button">LOG OUT</a>
+          </li>
           {% else %}
           <li class="nav-item">
             <a class="btn btn-primary btn-login-base" href="/login" role="button">LOGIN</a>
