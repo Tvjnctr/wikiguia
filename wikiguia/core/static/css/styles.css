@@ -47,7 +47,6 @@
     margin: 50px auto 50px auto
     
 }
-
 /*-----FIN------*/
 
 
@@ -271,6 +270,9 @@ body {
     color: #ffc107;
 }
 
+.alert.alert-success.alert-dismissible.fade.show{
+    margin: 20px 20px ;
+}
 /*-----FIN------*/
 
 

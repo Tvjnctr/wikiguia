@@ -6,6 +6,13 @@ Home
 {% endblock %}
 
 {% block content %}
+
+{% for msg in messages %}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    Has <strong>CERRADO</strong> sesión correctamente!
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
 <br>
 <br>
 <div class="container" id="slider">
