@@ -1,3 +1,4 @@
+
 /*SECCION - DASHBOARD (ADMIN CP) */
 .btn-primary.admin-cp-delete {
     background-color: #f85c4e;
@@ -47,7 +48,17 @@
     margin: 50px auto 50px auto
     
 }
-/*-----FIN------*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -72,7 +83,17 @@
     filter: brightness(120%);
 }
 
-/*-----FIN------*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -117,7 +138,18 @@
     width: 300px;
 }
 
-/*-----FIN------*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -221,7 +253,16 @@ label[for="id_data_enemies"] {
     margin-left: 30px;
 }
 
-/*-----FIN------*/
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -273,7 +314,14 @@ body {
 .alert.alert-success.alert-dismissible.fade.show{
     margin: 20px 20px ;
 }
-/*-----FIN------*/
+
+
+
+
+
+
+
+
 
 
 
@@ -338,7 +386,13 @@ body {
     padding-bottom: 4%;
 }
 
-/*-----FIN------*/
+
+
+
+
+
+
+
 
 
 
@@ -373,7 +427,36 @@ body {
     background-color: #6e6e6e;
 }
 
-/*-----FIN------*/
+
+
+
+
+
+
+
+
+
+
+/* SECCION - INDEX */
+.container-index-wiki-desc {
+    background: linear-gradient(to top, #535353, #c2c2c2);
+    padding: 20px; 
+    border-radius: 10px;
+}
+
+.index-wiki-desc {
+    font-family: Arial, sans-serif; 
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
