@@ -83,6 +83,20 @@
     filter: brightness(120%);
 }
 
+.nav-link.active.details-box {
+    background-color: rgba(232, 232, 232, 0.768); 
+    color: #141414; 
+}
+
+.nav-link.details-box {
+    background-color: rgba(145, 145, 145, 0.236); 
+    color: #fff9f9; 
+}
+
+#tab-01,#tab-02,#tab-03,#tab-04,#tab-05,#tab-06,#tab-07 {
+    color: #fff9f9;
+}
+
 
 
 
@@ -369,6 +383,7 @@ body {
     margin-top: 20px;
     color: rgb(239, 239, 239);
     font-weight: bold;
+    text-shadow: 2px 6px 8px rgba(0, 0, 0, 0.48);
 }
 
 #game-card-description {
@@ -426,7 +441,6 @@ body {
 .carousel-indicators .active {
     background-color: #6e6e6e;
 }
-
 
 
 
