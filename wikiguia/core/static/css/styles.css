@@ -153,6 +153,34 @@
     width: 300px;
 }
 
+/*Quienes Somos*/
+
+.contenedorAbout{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to top, #535353, #8a8a8a);
+}
+
+.tituloQS{
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+}
+
+.parrafoQS{
+    text-align: justify;
+    color: white;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+
+
 
 
 

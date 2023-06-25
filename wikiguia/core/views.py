@@ -15,6 +15,9 @@ def index(request):
 def contact(request):
     return render(request, 'core/contact.html')
 
+def about(request):
+    return render(request, 'core/about.html')
+
 
 def guides(request):
     games = Game.objects.filter(is_visible=True)
