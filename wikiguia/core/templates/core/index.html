@@ -6,6 +6,18 @@ Home
 {% endblock %}
 
 {% block content %}
+<div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          Bienvenido a <strong>Wiki-Guia</strong>. Recuerda registrarte para estar al tanto de nuestras mas recientes guias!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ir al Sitio</button>
+        </div>
+      </div>
+    </div>
+</div>
 
 {% for msg in messages %}
 <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -98,5 +110,10 @@ Home
     </div>
 </div>
 <br>
-<br>
+
+
 {% endblock %}
+
+
+
+
