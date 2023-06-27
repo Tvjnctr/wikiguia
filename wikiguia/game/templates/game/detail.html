@@ -1,0 +1,140 @@
+{% extends 'core/base.html' %}
+
+
+{% block title %}
+{{ game.name }}
+{% endblock %}
+
+{% block content %}
+<style>
+    .game-background {
+        background: url('{{ game.carousel_image.url }}') no-repeat center center fixed;
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+</style>
+<div class="container-fluid game-background">
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="picture-container-d">
+                    <img src="{{ game.image.url }}" class="img-fluid img-detalles" alt="Image">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1 class="login-title">{{ game.name }}</h1>
+                <ul class="nav nav-tabs mb-3" id="myTab0" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active details-box" id="tab01" data-bs-toggle="tab" data-bs-target="#tab-01" type="button"
+                            role="tab" aria-controls="home" aria-selected="true">
+                            Resumen
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link details-box" id="tab02" data-bs-toggle="tab" data-bs-target="#tab-02" type="button"
+                            role="tab" aria-controls="profile" aria-selected="false">
+                            Historia
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link details-box" id="tab03" data-bs-toggle="tab" data-bs-target="#tab-03" type="button"
+                            role="tab" aria-controls="contact" aria-selected="false">
+                            Armas
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link details-box" id="tab04" data-bs-toggle="tab" data-bs-target="#tab-04" type="button"
+                            role="tab" aria-controls="profile" aria-selected="false">
+                            Logros
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link details-box" id="tab05" data-bs-toggle="tab" data-bs-target="#tab-05" type="button"
+                            role="tab" aria-controls="profile" aria-selected="false">
+                            Duración
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link details-box" id="tab06" data-bs-toggle="tab" data-bs-target="#tab-06" type="button"
+                            role="tab" aria-controls="profile" aria-selected="false">
+                            Ocultos
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link details-box" id="tab07" data-bs-toggle="tab" data-bs-target="#tab-07" type="button"
+                            role="tab" aria-controls="profile" aria-selected="false">
+                            Enemigos
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent0">
+                    <div class="tab-pane fade show active" id="tab-01" role="tabpanel" aria-labelledby="home-tab1">
+                        {{ game.description }}
+                    </div>
+                    <div class="tab-pane fade" id="tab-02" role="tabpanel" aria-labelledby="profile-tab02">
+                        {{ game.data_lore }}
+                    </div>
+                    <div class="tab-pane fade" id="tab-03" role="tabpanel" aria-labelledby="contact-tab03">
+                        {{ game.data_weapons }}
+                    </div>
+                    <div class="tab-pane fade" id="tab-04" role="tabpanel" aria-labelledby="contact-tab04">
+                        {{ game.data_achievements }}
+                     </div>
+                     <div class="tab-pane fade" id="tab-05" role="tabpanel" aria-labelledby="contact-tab05">
+                        {{ game.data_playtime }}
+                     </div>
+                     <div class="tab-pane fade" id="tab-06" role="tabpanel" aria-labelledby="contact-tab06">
+                        {{ game.data_easter_eggs }}
+                     </div>
+                     <div class="tab-pane fade" id="tab-07" role="tabpanel" aria-labelledby="contact-tab07">
+                        {{ game.data_enemies }}
+                     </div>
+                </div>
+
+
+
+
+
+                <!-- <div class="text-section">
+                    <h2>{{ game.name }}</h2>
+                </div>
+                <div class="text-section">
+                    <h6>DESCRIPCION BREVE</h6>
+                    <p>{{ game.description_short }}</p>
+                </div>
+                <div class="text-section">
+                    <h6>DESCRIPCION</h6>
+                    <p>{{ game.description }}</p>
+                </div>
+                <div class="text-section">
+                    <h6>HISTORIA</h6>
+                    <p>{{ game.data_lore }}</p>
+                </div>
+                <div class="text-section">
+                    <h6>ARMAS</h6>
+                    <p>{{ game.data_weapons }}</p>
+                </div>
+                <div class="text-section">
+                    <h6>LOGROS</h6>
+                    <p>{{ game.data_achievements }}</p>
+                </div>
+                <div class="text-section">
+                    <h6>DURACION</h6>
+                    <p>{{ game.data_playtime }}</p>
+                </div>
+                <div class="text-section">
+                    <h6>OCULTOS</h6>
+                    <p>{{ game.data_easter_eggs }}</p>
+                </div>
+                <div class="text-section">
+                    <h6>ENEMIGOS</h6>
+                    <p>{{ game.data_enemies }}</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+{% endblock %}

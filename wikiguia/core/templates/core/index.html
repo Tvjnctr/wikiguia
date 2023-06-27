@@ -1,0 +1,119 @@
+{% extends 'core/base.html' %}
+
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          Bienvenido a <strong>Wiki-Guia</strong>. Recuerda registrarte para estar al tanto de nuestras mas recientes guias!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ir al Sitio</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+{% for msg in messages %}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    Has <strong>CERRADO</strong> sesión correctamente!
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+<br>
+<br>
+<div class="container" id="slider">
+    <div class="carousel-container">
+        <div id="carouselExampleDark" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                {% for game in games|slice:"9:12" %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="10000">
+                    <img src="{{ game.carousel_image.url }}" class="d-block w-100" alt="{{ game.name }}">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="title-slider">{{ game.name }}</h1>
+                        <p class="text-slider">{{ game.description_short }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+<br>
+<a href="https://api.whatsapp.com/send?phone=56962399657" class="btn-wsp" target="_blank">
+    <i class="fa fa-whatsapp icono"></i>
+</a>
+<br>
+<div class="container">
+    <br>
+    <div class="row">
+        {% for game in games|slice:"3:9" %}
+        <div class="col-md-4">
+            <div class="picture-container">
+                <a href="{% url 'game:detail' game.id %}">
+                    <img class="img-fluid" src="{{ game.image.url }}" alt="Picture 1">
+                </a>
+                <p id="game-card-title"><strong>{{ game.name }}</strong></p>
+                <p id="game-card-description">{{ game.description }}</p>
+                <a class="bottom-link" href="{% url 'game:detail' game.id %}">Ver Guia</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<br>
+<br>
+<div class="container">
+    <div class="container-index-wiki-desc">
+        <h1>"Revive la diversión del pasado: Una guía completa de juegos antiguos para jugar como nuevo"</h1><br>
+        <p class="index-wiki-desc">Bienvenido a nuestra guía de videojuegos, donde
+            podrás descubrir todo lo relacionado con los juegos antiguos y nuevos, incluyendo los secretos ocultos
+            de cada uno.
+            Aquí encontrarás información detallada sobre los títulos más emblemáticos de las primeras consolas, así
+            como también sobre los juegos más recientes y populares.<br><br>
+            En nuestra página, podrás explorar la historia detrás de cada juego, desde su creación hasta su
+            lanzamiento, así como también descubrir detalles interesantes sobre los personajes, la trama y el
+            desarrollo del juego en sí.<br>
+            Además, te mostraremos cómo puedes desbloquear elementos ocultos y descubrir easter eggs que quizás
+            nunca supiste que existían.
+            Nuestro objetivo es proporcionarte una experiencia completa para que puedas disfrutar de tus juegos
+            favoritos, nuevos y antiguos, como si fuera la primera vez.<br><br>
+            Nos esforzamos por brindarte información detallada y precisa, para que puedas aprender todo lo que
+            necesitas saber sobre cada juego y convertirte en un experto en el tema.
+            ¡Así que no esperes más y explora nuestra guía de videojuegos! Descubre la historia detrás de tus juegos
+            favoritos y desbloquea sus secretos ocultos para disfrutar de la experiencia de juego más completa
+            posible, tanto en los juegos clásicos como en los nuevos y emocionantes lanzamientos.
+        </p>
+    </div>
+</div>
+<br>
+
+
+{% endblock %}
+
+
+
+

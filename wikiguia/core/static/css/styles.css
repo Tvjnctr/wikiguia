@@ -1,0 +1,590 @@
+/*SECCION - DASHBOARD (ADMIN CP) */
+.btn-primary.admin-cp-delete {
+    background-color: #f85c4e;
+    border-color: #f85c4e;
+    margin-bottom: 4%;
+}
+
+.btn-primary.admin-cp-delete:hover {
+    background-color: #d6584d !important;
+    border-color: #d6584d !important;
+}
+
+.btn-primary.admin-cp-edit {
+    margin-bottom: 4%;
+}
+
+.btn-primary.admin-cp-view {
+    margin-bottom: 4%;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-primary {
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    #game-card-title {
+        margin-top: 20px;
+        color: rgb(239, 239, 239);
+    }
+
+    .container-game-card-title {
+        min-height: 50px;
+    }
+}
+
+.container-game-card-title {
+    min-height: 100px;
+}
+
+.picture-container.admin-cp {
+    min-height: auto;
+    max-height: auto;
+}
+
+.container.container-guides-admin-panel {
+    margin: 50px auto 50px auto
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECCION - DETALLES GUIA */
+.text-section {
+    color: #ffffff;
+}
+
+.picture-container-d img {
+    width: 80%;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    background-color: #d4d4d428;
+    padding: 2%;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.236);
+}
+
+.picture-container-d img:hover {
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    filter: brightness(120%);
+}
+
+.nav-link.active.details-box {
+    background-color: rgba(232, 232, 232, 0.768); 
+    color: #141414; 
+}
+
+.nav-link.details-box {
+    background-color: rgba(145, 145, 145, 0.236); 
+    color: #fff9f9; 
+}
+
+#tab-01,#tab-02,#tab-03,#tab-04,#tab-05,#tab-06,#tab-07 {
+    color: #fff9f9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECCION - LOGIN */
+.container-register-form.login-container-form {
+    margin-top: 3%;
+    margin-bottom: 10%;
+    padding-left: 70px;
+    max-width: 500px;
+}
+
+.input_form_box.login-container-form {
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 412px) {
+    .input_form_box.login-container-form {
+        width: 150px;
+    }
+
+    .container-register-form.login-container-form {
+        padding-left: 40px;
+    }
+}
+
+.login-title {
+    padding-top: 2%;
+    color: rgb(255, 255, 255);
+}
+
+.form-label-login {
+    color: #ffffff;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    font-weight: bold;
+}
+
+.btn.btn-primary.btn-login {
+    color: #000000;
+    margin-top: 40px;
+    padding: 0px;
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SECCION - Quienes Somos*/
+.contenedorAbout{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to top, #535353, #8a8a8a);
+}
+
+.tituloQS{
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+}
+
+.parrafoQS{
+    text-align: justify;
+    color: white;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+/*preguntas Frecuentes
+
+.infoPF{
+    color: white;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECCION - SUBIR GUIA */
+.container-register-form {
+    background-color: #d4d4d428;
+    max-width: 800px;
+    padding: 30px;
+    margin: 40px 60px 60px;
+    border-radius: 15px;
+}
+
+.input_form_box {
+    border-style: hidden;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    background-color: #ffffff;
+    outline: none;
+    display: block;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    .input_form_box {
+        width: 200px;
+        margin-left: 5px;
+    }
+
+    label[for="id_name"],
+    label[for="id_description"],
+    label[for="id_description_short"],
+    label[for="id_release_date"],
+    label[for="id_is_visible"],
+    label[for="id_image"],
+    label[for="id_carousel_image"],
+    label[for="id_data_lore"],
+    label[for="id_data_weapons"],
+    label[for="id_data_achievements"],
+    label[for="id_data_playtime"],
+    label[for="id_data_easter_eggs"],
+    label[for="id_data_enemies"] {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .input_form_box {
+        width: 150px;
+        margin-left: 0px;
+    }
+}
+
+label[for="id_name"],
+label[for="id_description"],
+label[for="id_description_short"],
+label[for="id_release_date"],
+label[for="id_is_visible"],
+label[for="id_image"],
+label[for="id_carousel_image"],
+label[for="id_data_lore"],
+label[for="id_data_weapons"],
+label[for="id_data_achievements"],
+label[for="id_data_playtime"],
+label[for="id_data_easter_eggs"],
+label[for="id_data_enemies"] {
+    color: #ffffff;
+    margin-top: 7px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+#id_is_visible {
+    margin-top: 3px;
+    height: 20px;
+    padding: 0px;
+    width: 20px;
+}
+
+.btn-new-guide {
+    margin-left: 30px;
+    width: 30% !important;
+}
+
+.btn-new-guide:hover {
+    background-color: #ffda6b !important;
+    border-color: #ffda6b !important;
+    color: #000000 !important;
+}
+
+.new-game-title {
+    padding-top: 2%;
+    color: rgb(255, 255, 255);
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECCION - HTML BASE */
+.error-form {
+    padding: 10px;
+    background-color: rgba(95, 95, 95, 0.541);
+    border-radius: 10px;
+    color: #ffc107;
+}
+
+.nav-link.nav-link-admin {
+    font-weight: 100;
+    color: #ffc107;
+}
+
+.nav-link.nav-link-admin:hover {
+    font-weight: 300;
+    color: #d7d7d7;
+}
+
+.btn.btn-primary.btn-login-base {
+    padding: 3px;
+    width: 80px;
+}
+
+.btn.btn-primary.btn-signup {
+    padding: 3px;
+    width: 130px;
+}
+
+@media only screen and (max-width:991px) {
+    .btn.btn-primary.btn-signup,.btn.btn-primary.btn-login-base  {
+        width: 120px;
+        margin-top: 4px;
+        padding: 2px;
+    }
+}
+
+.btn-primary {
+    width: 100%;
+    max-width: 100%;
+    height: 35px;
+    color: #000000;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    padding: 3px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #ffda6b !important;
+    border-color: #ffda6b !important;
+    color: #000000 !important;
+}
+
+body {
+    background: linear-gradient(to bottom, #363f4a, #1f262e);
+}
+
+.fas.fa-gem.me-3,
+.text-uppercase.fw-bold.mb-4 {
+    color: #ffc107;
+}
+
+.alert.alert-success.alert-dismissible.fade.show{
+    margin: 20px 20px ;
+}
+
+.container.wrong-auth {
+    margin: 200px auto 400px auto;
+    color: #e7e7e7;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SECCION - TARJETAS */
+.picture-container {
+    background-color: #d4d4d428;
+    border-radius: 10px;
+    max-width: 500px;
+    min-height: 650px;
+    max-height: 800px;
+    padding: 12px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.236);
+}
+
+.picture-container img {
+    border-radius: 10px;
+    margin-top: 3px;
+    transition: all 0.5s ease;
+}
+
+.picture-container img:hover {
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    filter: brightness(120%);
+}
+
+.bottom-link {
+    margin-top: auto;
+    color: #ffc10795;
+    text-decoration: none
+}
+
+.bottom-link:hover {
+    margin-top: auto;
+    color: #ffe083;
+    text-decoration: none
+}
+
+#game-card-title {
+    margin-top: 20px;
+    color: rgb(239, 239, 239);
+    font-weight: bold;
+    text-shadow: 2px 6px 8px rgba(0, 0, 0, 0.48);
+}
+
+#game-card-description {
+    color: #bdc3c7;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+}
+
+.container.container-guides {
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SECCION - CAROUSEL */
+.text-slider {
+    color: #ffffff;
+    font-stretch: expanded;
+    font-size: 1.3rem;
+}
+
+.title-slider {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
+.slide {
+    border: solid;
+    border-color: transparent;
+    color: #ffffff;
+    background-color: #d4d4d428;
+    border-radius: 5px;
+    padding: 7px;
+    box-shadow: 30px 40px 30px rgba(0, 0, 0, 0.144);
+}
+
+.carousel-indicators button {
+    background-color: #ffffff;
+}
+
+.carousel-indicators .active {
+    background-color: #6e6e6e;
+}
+
+
+
+
+
+
+
+
+
+
+/* SECCION - INDEX */
+.container-index-wiki-desc {
+    background: linear-gradient(to top, #535353, #c2c2c2);
+    padding: 20px; 
+    border-radius: 10px;
+}
+
+.index-wiki-desc {
+    font-family: Arial, sans-serif; 
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+/* SECCION - WHATSAPP */
+.btn-wsp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    line-height: 63px;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: all 300ms ease;
+}
+
+.btn-wsp:hover {
+    background: #20ba5a;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    .btn-wsp {
+        width: 63px;
+        height: 63px;
+        line-height: 66px;
+    }
+}
+
+
+/*SECCION DEV PARA PRUEBAS*/
+/* .container {
+    border: solid;
+    border-color: blueviolet;
+}
+
+.container-lg {
+    border: solid;
+    border-color: blueviolet;
+}
+
+.col-md-6 {
+  border: solid;
+  border-color: blueviolet; 
+}
+
+.text-section {
+    border: solid;
+    border-color: rgb(173, 118, 224); 
+} */

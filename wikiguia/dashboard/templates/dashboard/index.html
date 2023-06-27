@@ -1,0 +1,40 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+Panel de Administrador
+{% endblock %}
+
+{% block content %}
+{% if request.user.is_authenticated %}
+{% if request.user.is_superuser or request.user.is_staff %}
+<div class="container container-guides-admin-panel">
+    <div class="row">
+        {% for game in games %}
+        <div class="col-xl-2 col-md-4 admin-cp">
+            <div class="picture-container admin-cp">
+                <a href="{% url 'game:detail' game.id %}">
+                    <img class="img-fluid admin-cp" src="{{ game.image.url }}" alt="Picture 1">
+                </a>
+                <div class="container container-game-card-title">
+                    <p id="game-card-title"><strong>{{ game.name }}</strong></p>
+                </div>
+                <div class="container">
+                    <a class="btn btn-primary admin-cp-view" href="{% url 'game:detail' game.id %}"
+                        role="button">Ver</a>
+                    <a class="btn btn-primary admin-cp-edit" href="{% url 'game:edit' game.id %}"
+                        role="button">Modificar</a>
+                    <a class="btn btn-primary admin-cp-delete" href="{% url 'game:delete' game.id %}" role="button">Eliminar</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% else %}
+<div class="container wrong-auth">
+    <h1>NO POSEES PERMISOS PARA VER ESTA SECCIÓN</h1>
+</div>
+{% endif %}
+{% else %}
+{% endif %}
+{% endblock %}
