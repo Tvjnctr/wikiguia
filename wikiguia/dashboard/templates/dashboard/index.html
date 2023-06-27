@@ -23,8 +23,7 @@ Panel de Administrador
                         role="button">Ver</a>
                     <a class="btn btn-primary admin-cp-edit" href="{% url 'game:edit' game.id %}"
                         role="button">Modificar</a>
-                    <a class="btn btn-primary admin-cp-delete" href="DESACTIVADO" role="button">Eliminar</a>
-                    "{% url 'game:delete' game.id %}"
+                    <a class="btn btn-primary admin-cp-delete" href="{% url 'game:delete' game.id %}" role="button">Eliminar</a>
                 </div>
             </div>
         </div>
@@ -38,9 +37,4 @@ Panel de Administrador
 {% endif %}
 {% else %}
 {% endif %}
-
-
-
-
-
 {% endblock %}
